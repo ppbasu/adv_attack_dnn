@@ -1,0 +1,1025 @@
+2020-11-17 16:03:53 - INFO - saving to ./results/resnet_adversarial_image_training_cw
+2020-11-17 16:03:53 - DEBUG - run arguments: Namespace(anb=1, batch_size=256, bitwise_prob=0, chunkwise=0, common_prob=0, dataset='cifar10', epochs=100, evaluate=None, gpus='0', ideal_ADC=0, input_size=None, lr=0.1, model='resnet', model_config='', momentum=0.9, noise_inject=False, optimizer='SGD', pgditers=10, pni=0, print_freq=100, prob_file='../Prob_data/prob_0p6_0p3_linear_chip7.mat', results_dir='./results', resume='', save='resnet_adversarial_image_training_cw', savepgd=0, sd=0.0, start_epoch=0, ternary=False, trpgd=1, tspgd=1, type='torch.cuda.FloatTensor', weight_decay=0.0001, wnb=1, workers=8)
+2020-11-17 16:03:54 - INFO - creating model resnet
+2020-11-17 16:03:54 - INFO - created model with configuration: {'input_size': None, 'dataset': 'cifar10', 'act_precision': 1}
+2020-11-17 16:03:54 - INFO - number of parameters: 175258
+2020-11-17 16:03:58 - INFO - training regime: {0: {'optimizer': 'SGD', 'lr': 0.1, 'weight_decay': 0.0001, 'momentum': 0.9}, 81: {'lr': 0.01}, 122: {'lr': 0.001, 'weight_decay': 0}, 164: {'lr': 0.0001}}
+2020-11-17 16:03:58 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 16:03:58 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 16:03:58 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 16:03:58 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 16:04:01 - INFO - TRAINING - Epoch: [0][0/196]	Time 2.907 (2.907)	Data 0.945 (0.945)	Loss 2.3276 (2.3276)	Prec@1 6.641 (6.641)	Prec@5 48.438 (48.438)
+2020-11-17 16:05:32 - INFO - TRAINING - Epoch: [0][100/196]	Time 0.983 (0.926)	Data 0.000 (0.010)	Loss 1.7308 (1.8583)	Prec@1 28.125 (27.522)	Prec@5 83.594 (81.188)
+2020-11-17 16:06:59 - INFO - EVALUATING - Epoch: [0][0/40]	Time 2.127 (2.127)	Data 0.723 (0.723)	Loss 2.5625 (2.5625)	Prec@1 19.922 (19.922)	Prec@5 57.812 (57.812)
+2020-11-17 16:07:32 - INFO - 
+ Epoch: 1	Training Loss 1.7222 	Training Prec@1 32.936 	Training Prec@5 84.830 	Validation Loss 2.5866 	Validation Prec@1 20.340 	Validation Prec@5 57.770 
+
+2020-11-17 16:07:32 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 16:07:32 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 16:07:32 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 16:07:32 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 16:07:34 - INFO - TRAINING - Epoch: [1][0/196]	Time 2.057 (2.057)	Data 0.790 (0.790)	Loss 1.4548 (1.4548)	Prec@1 41.406 (41.406)	Prec@5 91.406 (91.406)
+2020-11-17 16:09:04 - INFO - TRAINING - Epoch: [1][100/196]	Time 0.875 (0.913)	Data 0.000 (0.008)	Loss 1.3626 (1.3846)	Prec@1 48.047 (45.730)	Prec@5 91.406 (91.584)
+2020-11-17 16:10:31 - INFO - EVALUATING - Epoch: [1][0/40]	Time 1.736 (1.736)	Data 0.510 (0.510)	Loss 2.3247 (2.3247)	Prec@1 17.188 (17.188)	Prec@5 62.109 (62.109)
+2020-11-17 16:11:03 - INFO - 
+ Epoch: 2	Training Loss 1.3261 	Training Prec@1 47.924 	Training Prec@5 92.406 	Validation Loss 2.3213 	Validation Prec@1 18.870 	Validation Prec@5 62.170 
+
+2020-11-17 16:11:03 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 16:11:03 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 16:11:03 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 16:11:03 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 16:11:05 - INFO - TRAINING - Epoch: [2][0/196]	Time 2.197 (2.197)	Data 0.743 (0.743)	Loss 1.1898 (1.1898)	Prec@1 50.781 (50.781)	Prec@5 96.094 (96.094)
+2020-11-17 16:12:36 - INFO - TRAINING - Epoch: [2][100/196]	Time 0.896 (0.921)	Data 0.000 (0.007)	Loss 0.9701 (1.1561)	Prec@1 60.547 (54.413)	Prec@5 97.266 (94.303)
+2020-11-17 16:14:03 - INFO - EVALUATING - Epoch: [2][0/40]	Time 2.193 (2.193)	Data 0.978 (0.978)	Loss 2.2130 (2.2130)	Prec@1 18.359 (18.359)	Prec@5 58.203 (58.203)
+2020-11-17 16:14:35 - INFO - 
+ Epoch: 3	Training Loss 1.1346 	Training Prec@1 55.048 	Training Prec@5 94.520 	Validation Loss 2.2265 	Validation Prec@1 19.920 	Validation Prec@5 60.410 
+
+2020-11-17 16:14:35 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 16:14:35 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 16:14:35 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 16:14:35 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 16:14:37 - INFO - TRAINING - Epoch: [3][0/196]	Time 2.269 (2.269)	Data 0.680 (0.680)	Loss 1.0108 (1.0108)	Prec@1 58.203 (58.203)	Prec@5 95.312 (95.312)
+2020-11-17 16:16:08 - INFO - TRAINING - Epoch: [3][100/196]	Time 0.906 (0.922)	Data 0.000 (0.007)	Loss 0.9395 (1.0306)	Prec@1 63.672 (58.791)	Prec@5 96.875 (95.274)
+2020-11-17 16:17:36 - INFO - EVALUATING - Epoch: [3][0/40]	Time 1.830 (1.830)	Data 0.514 (0.514)	Loss 2.0930 (2.0930)	Prec@1 22.266 (22.266)	Prec@5 61.719 (61.719)
+2020-11-17 16:18:08 - INFO - 
+ Epoch: 4	Training Loss 1.0056 	Training Prec@1 59.630 	Training Prec@5 95.506 	Validation Loss 2.0434 	Validation Prec@1 22.860 	Validation Prec@5 64.440 
+
+2020-11-17 16:18:08 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 16:18:08 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 16:18:08 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 16:18:08 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 16:18:10 - INFO - TRAINING - Epoch: [4][0/196]	Time 2.156 (2.156)	Data 0.890 (0.890)	Loss 0.7984 (0.7984)	Prec@1 64.844 (64.844)	Prec@5 98.438 (98.438)
+2020-11-17 16:19:41 - INFO - TRAINING - Epoch: [4][100/196]	Time 0.936 (0.921)	Data 0.000 (0.009)	Loss 0.8662 (0.9171)	Prec@1 64.844 (63.119)	Prec@5 97.266 (96.051)
+2020-11-17 16:21:10 - INFO - EVALUATING - Epoch: [4][0/40]	Time 2.316 (2.316)	Data 0.904 (0.904)	Loss 2.5889 (2.5889)	Prec@1 12.891 (12.891)	Prec@5 58.203 (58.203)
+2020-11-17 16:21:42 - INFO - 
+ Epoch: 5	Training Loss 0.8983 	Training Prec@1 63.970 	Training Prec@5 96.322 	Validation Loss 2.5720 	Validation Prec@1 14.370 	Validation Prec@5 60.240 
+
+2020-11-17 16:21:42 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 16:21:42 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 16:21:42 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 16:21:42 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 16:21:45 - INFO - TRAINING - Epoch: [5][0/196]	Time 2.294 (2.294)	Data 0.937 (0.937)	Loss 0.7017 (0.7017)	Prec@1 71.875 (71.875)	Prec@5 98.047 (98.047)
+2020-11-17 16:23:16 - INFO - TRAINING - Epoch: [5][100/196]	Time 0.889 (0.923)	Data 0.000 (0.009)	Loss 0.7463 (0.8316)	Prec@1 69.141 (66.414)	Prec@5 97.656 (96.802)
+2020-11-17 16:24:43 - INFO - EVALUATING - Epoch: [5][0/40]	Time 2.506 (2.506)	Data 0.900 (0.900)	Loss 1.9679 (1.9679)	Prec@1 24.609 (24.609)	Prec@5 68.359 (68.359)
+2020-11-17 16:25:15 - INFO - 
+ Epoch: 6	Training Loss 0.8257 	Training Prec@1 66.970 	Training Prec@5 96.934 	Validation Loss 2.0224 	Validation Prec@1 24.100 	Validation Prec@5 68.520 
+
+2020-11-17 16:25:15 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 16:25:15 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 16:25:15 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 16:25:15 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 16:25:17 - INFO - TRAINING - Epoch: [6][0/196]	Time 2.194 (2.194)	Data 0.908 (0.908)	Loss 0.7878 (0.7878)	Prec@1 71.094 (71.094)	Prec@5 97.266 (97.266)
+2020-11-17 16:26:48 - INFO - TRAINING - Epoch: [6][100/196]	Time 0.937 (0.924)	Data 0.000 (0.009)	Loss 0.6622 (0.7756)	Prec@1 73.047 (68.572)	Prec@5 97.656 (97.142)
+2020-11-17 16:28:15 - INFO - EVALUATING - Epoch: [6][0/40]	Time 1.951 (1.951)	Data 0.493 (0.493)	Loss 1.9564 (1.9564)	Prec@1 23.438 (23.438)	Prec@5 59.766 (59.766)
+2020-11-17 16:28:47 - INFO - 
+ Epoch: 7	Training Loss 0.7651 	Training Prec@1 69.244 	Training Prec@5 97.282 	Validation Loss 2.0320 	Validation Prec@1 23.180 	Validation Prec@5 59.060 
+
+2020-11-17 16:28:48 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 16:28:48 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 16:28:48 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 16:28:48 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 16:28:50 - INFO - TRAINING - Epoch: [7][0/196]	Time 2.337 (2.337)	Data 0.993 (0.993)	Loss 0.8010 (0.8010)	Prec@1 71.875 (71.875)	Prec@5 97.266 (97.266)
+2020-11-17 16:30:21 - INFO - TRAINING - Epoch: [7][100/196]	Time 0.908 (0.924)	Data 0.000 (0.010)	Loss 0.7389 (0.7271)	Prec@1 72.656 (71.005)	Prec@5 96.484 (97.625)
+2020-11-17 16:31:48 - INFO - EVALUATING - Epoch: [7][0/40]	Time 2.131 (2.131)	Data 0.847 (0.847)	Loss 2.3674 (2.3674)	Prec@1 18.359 (18.359)	Prec@5 53.906 (53.906)
+2020-11-17 16:32:20 - INFO - 
+ Epoch: 8	Training Loss 0.7193 	Training Prec@1 71.236 	Training Prec@5 97.686 	Validation Loss 2.3235 	Validation Prec@1 19.220 	Validation Prec@5 59.400 
+
+2020-11-17 16:32:20 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 16:32:20 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 16:32:20 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 16:32:20 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 16:32:23 - INFO - TRAINING - Epoch: [8][0/196]	Time 2.711 (2.711)	Data 1.120 (1.120)	Loss 0.6422 (0.6422)	Prec@1 71.484 (71.484)	Prec@5 99.609 (99.609)
+2020-11-17 16:33:54 - INFO - TRAINING - Epoch: [8][100/196]	Time 0.886 (0.923)	Data 0.000 (0.011)	Loss 0.7184 (0.6816)	Prec@1 70.312 (72.795)	Prec@5 98.438 (97.888)
+2020-11-17 16:35:21 - INFO - EVALUATING - Epoch: [8][0/40]	Time 1.986 (1.986)	Data 0.774 (0.774)	Loss 2.0437 (2.0437)	Prec@1 24.609 (24.609)	Prec@5 60.547 (60.547)
+2020-11-17 16:35:53 - INFO - 
+ Epoch: 9	Training Loss 0.6774 	Training Prec@1 72.820 	Training Prec@5 97.872 	Validation Loss 2.0661 	Validation Prec@1 25.450 	Validation Prec@5 62.740 
+
+2020-11-17 16:35:53 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 16:35:53 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 16:35:53 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 16:35:53 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 16:35:56 - INFO - TRAINING - Epoch: [9][0/196]	Time 2.425 (2.425)	Data 0.903 (0.903)	Loss 0.6924 (0.6924)	Prec@1 73.047 (73.047)	Prec@5 98.047 (98.047)
+2020-11-17 16:37:26 - INFO - TRAINING - Epoch: [9][100/196]	Time 0.887 (0.923)	Data 0.000 (0.009)	Loss 0.6400 (0.6490)	Prec@1 71.094 (73.813)	Prec@5 98.828 (98.082)
+2020-11-17 16:38:54 - INFO - EVALUATING - Epoch: [9][0/40]	Time 2.228 (2.228)	Data 0.785 (0.785)	Loss 1.6857 (1.6857)	Prec@1 29.297 (29.297)	Prec@5 77.734 (77.734)
+2020-11-17 16:39:26 - INFO - 
+ Epoch: 10	Training Loss 0.6538 	Training Prec@1 73.894 	Training Prec@5 98.118 	Validation Loss 1.7670 	Validation Prec@1 29.450 	Validation Prec@5 77.580 
+
+2020-11-17 16:39:26 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 16:39:26 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 16:39:26 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 16:39:26 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 16:39:28 - INFO - TRAINING - Epoch: [10][0/196]	Time 2.267 (2.267)	Data 0.802 (0.802)	Loss 0.5065 (0.5065)	Prec@1 77.734 (77.734)	Prec@5 98.047 (98.047)
+2020-11-17 16:40:59 - INFO - TRAINING - Epoch: [10][100/196]	Time 0.871 (0.925)	Data 0.000 (0.008)	Loss 0.5861 (0.6291)	Prec@1 76.172 (74.683)	Prec@5 98.047 (98.093)
+2020-11-17 16:42:27 - INFO - EVALUATING - Epoch: [10][0/40]	Time 1.813 (1.813)	Data 0.570 (0.570)	Loss 2.1674 (2.1674)	Prec@1 20.312 (20.312)	Prec@5 64.453 (64.453)
+2020-11-17 16:42:59 - INFO - 
+ Epoch: 11	Training Loss 0.6246 	Training Prec@1 74.874 	Training Prec@5 98.238 	Validation Loss 2.1566 	Validation Prec@1 22.170 	Validation Prec@5 65.800 
+
+2020-11-17 16:42:59 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 16:42:59 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 16:42:59 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 16:42:59 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 16:43:01 - INFO - TRAINING - Epoch: [11][0/196]	Time 2.252 (2.252)	Data 0.841 (0.841)	Loss 0.5041 (0.5041)	Prec@1 78.516 (78.516)	Prec@5 99.219 (99.219)
+2020-11-17 16:44:32 - INFO - TRAINING - Epoch: [11][100/196]	Time 0.893 (0.922)	Data 0.000 (0.008)	Loss 0.6716 (0.6029)	Prec@1 72.266 (75.847)	Prec@5 98.047 (98.530)
+2020-11-17 16:45:59 - INFO - EVALUATING - Epoch: [11][0/40]	Time 2.314 (2.314)	Data 0.652 (0.652)	Loss 1.7648 (1.7648)	Prec@1 31.250 (31.250)	Prec@5 68.750 (68.750)
+2020-11-17 16:46:32 - INFO - 
+ Epoch: 12	Training Loss 0.6008 	Training Prec@1 76.122 	Training Prec@5 98.474 	Validation Loss 1.7767 	Validation Prec@1 30.730 	Validation Prec@5 70.850 
+
+2020-11-17 16:46:32 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 16:46:32 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 16:46:32 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 16:46:32 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 16:46:34 - INFO - TRAINING - Epoch: [12][0/196]	Time 2.149 (2.149)	Data 0.833 (0.833)	Loss 0.6240 (0.6240)	Prec@1 78.516 (78.516)	Prec@5 98.828 (98.828)
+2020-11-17 16:48:05 - INFO - TRAINING - Epoch: [12][100/196]	Time 0.922 (0.922)	Data 0.000 (0.008)	Loss 0.6037 (0.5646)	Prec@1 77.344 (77.340)	Prec@5 96.875 (98.708)
+2020-11-17 16:49:32 - INFO - EVALUATING - Epoch: [12][0/40]	Time 2.203 (2.203)	Data 0.543 (0.543)	Loss 2.0736 (2.0736)	Prec@1 28.125 (28.125)	Prec@5 64.844 (64.844)
+2020-11-17 16:50:04 - INFO - 
+ Epoch: 13	Training Loss 0.5797 	Training Prec@1 76.828 	Training Prec@5 98.562 	Validation Loss 2.1533 	Validation Prec@1 24.270 	Validation Prec@5 65.370 
+
+2020-11-17 16:50:04 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 16:50:04 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 16:50:04 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 16:50:04 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 16:50:06 - INFO - TRAINING - Epoch: [13][0/196]	Time 2.239 (2.239)	Data 0.877 (0.877)	Loss 0.4918 (0.4918)	Prec@1 79.688 (79.688)	Prec@5 98.828 (98.828)
+2020-11-17 16:51:37 - INFO - TRAINING - Epoch: [13][100/196]	Time 0.887 (0.923)	Data 0.000 (0.009)	Loss 0.6321 (0.5577)	Prec@1 73.047 (77.626)	Prec@5 98.047 (98.747)
+2020-11-17 16:53:05 - INFO - EVALUATING - Epoch: [13][0/40]	Time 2.083 (2.083)	Data 0.714 (0.714)	Loss 2.3218 (2.3218)	Prec@1 31.250 (31.250)	Prec@5 70.312 (70.312)
+2020-11-17 16:53:37 - INFO - 
+ Epoch: 14	Training Loss 0.5666 	Training Prec@1 77.354 	Training Prec@5 98.626 	Validation Loss 2.3026 	Validation Prec@1 31.490 	Validation Prec@5 71.650 
+
+2020-11-17 16:53:37 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 16:53:37 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 16:53:37 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 16:53:37 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 16:53:39 - INFO - TRAINING - Epoch: [14][0/196]	Time 2.451 (2.451)	Data 0.746 (0.746)	Loss 0.5202 (0.5202)	Prec@1 80.859 (80.859)	Prec@5 98.047 (98.047)
+2020-11-17 16:55:10 - INFO - TRAINING - Epoch: [14][100/196]	Time 0.883 (0.923)	Data 0.000 (0.008)	Loss 0.4438 (0.5459)	Prec@1 79.688 (78.226)	Prec@5 99.609 (98.700)
+2020-11-17 16:56:37 - INFO - EVALUATING - Epoch: [14][0/40]	Time 1.784 (1.784)	Data 0.555 (0.555)	Loss 2.0309 (2.0309)	Prec@1 32.422 (32.422)	Prec@5 69.141 (69.141)
+2020-11-17 16:57:09 - INFO - 
+ Epoch: 15	Training Loss 0.5511 	Training Prec@1 77.972 	Training Prec@5 98.702 	Validation Loss 2.1037 	Validation Prec@1 28.690 	Validation Prec@5 69.920 
+
+2020-11-17 16:57:09 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 16:57:09 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 16:57:09 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 16:57:09 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 16:57:11 - INFO - TRAINING - Epoch: [15][0/196]	Time 2.217 (2.217)	Data 0.733 (0.733)	Loss 0.6140 (0.6140)	Prec@1 74.609 (74.609)	Prec@5 98.438 (98.438)
+2020-11-17 16:58:42 - INFO - TRAINING - Epoch: [15][100/196]	Time 0.984 (0.923)	Data 0.000 (0.007)	Loss 0.5487 (0.5358)	Prec@1 74.609 (78.438)	Prec@5 99.609 (98.724)
+2020-11-17 17:00:10 - INFO - EVALUATING - Epoch: [15][0/40]	Time 2.268 (2.268)	Data 0.910 (0.910)	Loss 1.7210 (1.7210)	Prec@1 32.812 (32.812)	Prec@5 78.906 (78.906)
+2020-11-17 17:00:42 - INFO - 
+ Epoch: 16	Training Loss 0.5317 	Training Prec@1 78.702 	Training Prec@5 98.714 	Validation Loss 1.7630 	Validation Prec@1 32.250 	Validation Prec@5 77.520 
+
+2020-11-17 17:00:42 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 17:00:42 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 17:00:42 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 17:00:42 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 17:00:45 - INFO - TRAINING - Epoch: [16][0/196]	Time 2.389 (2.389)	Data 0.732 (0.732)	Loss 0.4302 (0.4302)	Prec@1 80.469 (80.469)	Prec@5 100.000 (100.000)
+2020-11-17 17:02:16 - INFO - TRAINING - Epoch: [16][100/196]	Time 0.879 (0.925)	Data 0.000 (0.007)	Loss 0.5607 (0.5153)	Prec@1 77.344 (79.355)	Prec@5 98.047 (98.882)
+2020-11-17 17:03:43 - INFO - EVALUATING - Epoch: [16][0/40]	Time 2.587 (2.587)	Data 0.831 (0.831)	Loss 1.9818 (1.9818)	Prec@1 21.484 (21.484)	Prec@5 66.016 (66.016)
+2020-11-17 17:04:15 - INFO - 
+ Epoch: 17	Training Loss 0.5177 	Training Prec@1 79.364 	Training Prec@5 98.846 	Validation Loss 1.9744 	Validation Prec@1 25.120 	Validation Prec@5 67.810 
+
+2020-11-17 17:04:15 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 17:04:15 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 17:04:15 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 17:04:15 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 17:04:17 - INFO - TRAINING - Epoch: [17][0/196]	Time 2.220 (2.220)	Data 0.963 (0.963)	Loss 0.5548 (0.5548)	Prec@1 77.344 (77.344)	Prec@5 98.047 (98.047)
+2020-11-17 17:05:48 - INFO - TRAINING - Epoch: [17][100/196]	Time 0.915 (0.923)	Data 0.000 (0.010)	Loss 0.5349 (0.5033)	Prec@1 79.688 (80.012)	Prec@5 97.266 (98.894)
+2020-11-17 17:07:16 - INFO - EVALUATING - Epoch: [17][0/40]	Time 1.950 (1.950)	Data 0.761 (0.761)	Loss 2.2264 (2.2264)	Prec@1 23.047 (23.047)	Prec@5 59.375 (59.375)
+2020-11-17 17:07:48 - INFO - 
+ Epoch: 18	Training Loss 0.5093 	Training Prec@1 79.752 	Training Prec@5 98.876 	Validation Loss 2.2328 	Validation Prec@1 23.630 	Validation Prec@5 63.020 
+
+2020-11-17 17:07:48 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 17:07:48 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 17:07:48 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 17:07:48 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 17:07:51 - INFO - TRAINING - Epoch: [18][0/196]	Time 2.877 (2.877)	Data 1.194 (1.194)	Loss 0.4655 (0.4655)	Prec@1 82.422 (82.422)	Prec@5 100.000 (100.000)
+2020-11-17 17:09:22 - INFO - TRAINING - Epoch: [18][100/196]	Time 0.893 (0.930)	Data 0.000 (0.012)	Loss 0.5645 (0.4879)	Prec@1 75.781 (80.573)	Prec@5 98.047 (98.979)
+2020-11-17 17:10:50 - INFO - EVALUATING - Epoch: [18][0/40]	Time 2.149 (2.149)	Data 0.622 (0.622)	Loss 2.0385 (2.0385)	Prec@1 32.031 (32.031)	Prec@5 69.531 (69.531)
+2020-11-17 17:11:22 - INFO - 
+ Epoch: 19	Training Loss 0.4968 	Training Prec@1 80.202 	Training Prec@5 98.936 	Validation Loss 2.1444 	Validation Prec@1 30.990 	Validation Prec@5 71.000 
+
+2020-11-17 17:11:22 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 17:11:22 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 17:11:22 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 17:11:22 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 17:11:24 - INFO - TRAINING - Epoch: [19][0/196]	Time 2.271 (2.271)	Data 0.803 (0.803)	Loss 0.4926 (0.4926)	Prec@1 77.344 (77.344)	Prec@5 100.000 (100.000)
+2020-11-17 17:12:55 - INFO - TRAINING - Epoch: [19][100/196]	Time 0.894 (0.918)	Data 0.000 (0.008)	Loss 0.4963 (0.4848)	Prec@1 79.297 (80.558)	Prec@5 98.828 (98.987)
+2020-11-17 17:14:22 - INFO - EVALUATING - Epoch: [19][0/40]	Time 2.057 (2.057)	Data 0.483 (0.483)	Loss 1.9222 (1.9222)	Prec@1 26.172 (26.172)	Prec@5 64.844 (64.844)
+2020-11-17 17:14:54 - INFO - 
+ Epoch: 20	Training Loss 0.4884 	Training Prec@1 80.330 	Training Prec@5 98.920 	Validation Loss 1.9517 	Validation Prec@1 24.800 	Validation Prec@5 66.400 
+
+2020-11-17 17:14:54 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 17:14:54 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 17:14:54 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 17:14:54 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 17:14:56 - INFO - TRAINING - Epoch: [20][0/196]	Time 2.188 (2.188)	Data 0.898 (0.898)	Loss 0.4888 (0.4888)	Prec@1 79.688 (79.688)	Prec@5 99.219 (99.219)
+2020-11-17 17:16:27 - INFO - TRAINING - Epoch: [20][100/196]	Time 0.898 (0.919)	Data 0.000 (0.009)	Loss 0.5061 (0.4723)	Prec@1 82.031 (81.006)	Prec@5 98.047 (99.056)
+2020-11-17 17:17:54 - INFO - EVALUATING - Epoch: [20][0/40]	Time 1.945 (1.945)	Data 0.732 (0.732)	Loss 1.9114 (1.9114)	Prec@1 26.172 (26.172)	Prec@5 68.359 (68.359)
+2020-11-17 17:18:26 - INFO - 
+ Epoch: 21	Training Loss 0.4776 	Training Prec@1 80.822 	Training Prec@5 99.046 	Validation Loss 1.9155 	Validation Prec@1 27.540 	Validation Prec@5 70.260 
+
+2020-11-17 17:18:26 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 17:18:26 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 17:18:26 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 17:18:26 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 17:18:28 - INFO - TRAINING - Epoch: [21][0/196]	Time 2.020 (2.020)	Data 0.699 (0.699)	Loss 0.3747 (0.3747)	Prec@1 85.547 (85.547)	Prec@5 99.609 (99.609)
+2020-11-17 17:19:59 - INFO - TRAINING - Epoch: [21][100/196]	Time 0.974 (0.925)	Data 0.000 (0.007)	Loss 0.5369 (0.4590)	Prec@1 78.516 (81.737)	Prec@5 98.047 (99.045)
+2020-11-17 17:21:27 - INFO - EVALUATING - Epoch: [21][0/40]	Time 2.088 (2.088)	Data 0.526 (0.526)	Loss 1.8947 (1.8947)	Prec@1 22.656 (22.656)	Prec@5 69.531 (69.531)
+2020-11-17 17:21:59 - INFO - 
+ Epoch: 22	Training Loss 0.4645 	Training Prec@1 81.386 	Training Prec@5 99.022 	Validation Loss 1.9587 	Validation Prec@1 26.360 	Validation Prec@5 67.540 
+
+2020-11-17 17:21:59 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 17:21:59 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 17:21:59 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 17:21:59 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 17:22:01 - INFO - TRAINING - Epoch: [22][0/196]	Time 2.452 (2.452)	Data 0.822 (0.822)	Loss 0.4835 (0.4835)	Prec@1 80.859 (80.859)	Prec@5 99.219 (99.219)
+2020-11-17 17:23:33 - INFO - TRAINING - Epoch: [22][100/196]	Time 0.912 (0.929)	Data 0.000 (0.008)	Loss 0.4091 (0.4456)	Prec@1 80.078 (82.228)	Prec@5 98.828 (99.099)
+2020-11-17 17:25:00 - INFO - EVALUATING - Epoch: [22][0/40]	Time 2.176 (2.176)	Data 0.883 (0.883)	Loss 1.9099 (1.9099)	Prec@1 18.750 (18.750)	Prec@5 66.797 (66.797)
+2020-11-17 17:25:32 - INFO - 
+ Epoch: 23	Training Loss 0.4628 	Training Prec@1 81.426 	Training Prec@5 99.064 	Validation Loss 1.9398 	Validation Prec@1 22.190 	Validation Prec@5 68.740 
+
+2020-11-17 17:25:32 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 17:25:32 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 17:25:32 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 17:25:32 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 17:25:34 - INFO - TRAINING - Epoch: [23][0/196]	Time 2.056 (2.056)	Data 0.622 (0.622)	Loss 0.3574 (0.3574)	Prec@1 84.766 (84.766)	Prec@5 99.219 (99.219)
+2020-11-17 17:27:06 - INFO - TRAINING - Epoch: [23][100/196]	Time 0.878 (0.927)	Data 0.000 (0.006)	Loss 0.4434 (0.4526)	Prec@1 79.688 (81.718)	Prec@5 99.219 (99.172)
+2020-11-17 17:28:33 - INFO - EVALUATING - Epoch: [23][0/40]	Time 2.235 (2.235)	Data 0.687 (0.687)	Loss 2.0467 (2.0467)	Prec@1 28.125 (28.125)	Prec@5 72.266 (72.266)
+2020-11-17 17:29:05 - INFO - 
+ Epoch: 24	Training Loss 0.4512 	Training Prec@1 81.946 	Training Prec@5 99.124 	Validation Loss 2.1607 	Validation Prec@1 28.160 	Validation Prec@5 71.960 
+
+2020-11-17 17:29:05 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 17:29:05 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 17:29:05 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 17:29:05 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 17:29:08 - INFO - TRAINING - Epoch: [24][0/196]	Time 2.261 (2.261)	Data 0.843 (0.843)	Loss 0.4184 (0.4184)	Prec@1 83.203 (83.203)	Prec@5 99.609 (99.609)
+2020-11-17 17:30:39 - INFO - TRAINING - Epoch: [24][100/196]	Time 0.959 (0.924)	Data 0.000 (0.008)	Loss 0.4265 (0.4432)	Prec@1 82.031 (81.996)	Prec@5 99.609 (99.172)
+2020-11-17 17:32:06 - INFO - EVALUATING - Epoch: [24][0/40]	Time 1.882 (1.882)	Data 0.543 (0.543)	Loss 1.9787 (1.9787)	Prec@1 28.125 (28.125)	Prec@5 71.875 (71.875)
+2020-11-17 17:32:38 - INFO - 
+ Epoch: 25	Training Loss 0.4482 	Training Prec@1 81.830 	Training Prec@5 99.134 	Validation Loss 1.9896 	Validation Prec@1 27.940 	Validation Prec@5 70.600 
+
+2020-11-17 17:32:39 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 17:32:39 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 17:32:39 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 17:32:39 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 17:32:41 - INFO - TRAINING - Epoch: [25][0/196]	Time 2.191 (2.191)	Data 0.839 (0.839)	Loss 0.4171 (0.4171)	Prec@1 82.812 (82.812)	Prec@5 99.609 (99.609)
+2020-11-17 17:34:12 - INFO - TRAINING - Epoch: [25][100/196]	Time 0.883 (0.927)	Data 0.000 (0.008)	Loss 0.4369 (0.4190)	Prec@1 83.984 (83.045)	Prec@5 100.000 (99.246)
+2020-11-17 17:35:39 - INFO - EVALUATING - Epoch: [25][0/40]	Time 2.137 (2.137)	Data 0.592 (0.592)	Loss 2.3049 (2.3049)	Prec@1 26.562 (26.562)	Prec@5 71.484 (71.484)
+2020-11-17 17:36:12 - INFO - 
+ Epoch: 26	Training Loss 0.4309 	Training Prec@1 82.600 	Training Prec@5 99.192 	Validation Loss 2.3418 	Validation Prec@1 25.300 	Validation Prec@5 69.140 
+
+2020-11-17 17:36:12 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 17:36:12 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 17:36:12 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 17:36:12 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 17:36:14 - INFO - TRAINING - Epoch: [26][0/196]	Time 2.254 (2.254)	Data 0.991 (0.991)	Loss 0.4534 (0.4534)	Prec@1 81.641 (81.641)	Prec@5 99.609 (99.609)
+2020-11-17 17:37:45 - INFO - TRAINING - Epoch: [26][100/196]	Time 0.892 (0.921)	Data 0.000 (0.010)	Loss 0.4548 (0.4177)	Prec@1 81.250 (83.180)	Prec@5 100.000 (99.308)
+2020-11-17 17:39:12 - INFO - EVALUATING - Epoch: [26][0/40]	Time 2.032 (2.032)	Data 0.511 (0.511)	Loss 1.8649 (1.8649)	Prec@1 26.953 (26.953)	Prec@5 66.016 (66.016)
+2020-11-17 17:39:44 - INFO - 
+ Epoch: 27	Training Loss 0.4294 	Training Prec@1 82.812 	Training Prec@5 99.214 	Validation Loss 1.8890 	Validation Prec@1 27.180 	Validation Prec@5 66.700 
+
+2020-11-17 17:39:44 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 17:39:44 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 17:39:44 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 17:39:44 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 17:39:46 - INFO - TRAINING - Epoch: [27][0/196]	Time 2.072 (2.072)	Data 0.814 (0.814)	Loss 0.3994 (0.3994)	Prec@1 83.984 (83.984)	Prec@5 98.828 (98.828)
+2020-11-17 17:41:17 - INFO - TRAINING - Epoch: [27][100/196]	Time 0.894 (0.927)	Data 0.000 (0.008)	Loss 0.4920 (0.4088)	Prec@1 83.203 (83.451)	Prec@5 99.609 (99.188)
+2020-11-17 17:42:44 - INFO - EVALUATING - Epoch: [27][0/40]	Time 1.851 (1.851)	Data 0.605 (0.605)	Loss 2.0902 (2.0902)	Prec@1 19.531 (19.531)	Prec@5 67.969 (67.969)
+2020-11-17 17:43:17 - INFO - 
+ Epoch: 28	Training Loss 0.4207 	Training Prec@1 82.992 	Training Prec@5 99.180 	Validation Loss 2.0746 	Validation Prec@1 22.060 	Validation Prec@5 65.520 
+
+2020-11-17 17:43:17 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 17:43:17 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 17:43:17 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 17:43:17 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 17:43:19 - INFO - TRAINING - Epoch: [28][0/196]	Time 2.358 (2.358)	Data 0.749 (0.749)	Loss 0.3935 (0.3935)	Prec@1 85.156 (85.156)	Prec@5 100.000 (100.000)
+2020-11-17 17:44:50 - INFO - TRAINING - Epoch: [28][100/196]	Time 0.921 (0.924)	Data 0.000 (0.008)	Loss 0.3467 (0.4123)	Prec@1 89.062 (83.489)	Prec@5 100.000 (99.288)
+2020-11-17 17:46:17 - INFO - EVALUATING - Epoch: [28][0/40]	Time 2.003 (2.003)	Data 0.733 (0.733)	Loss 1.9384 (1.9384)	Prec@1 32.812 (32.812)	Prec@5 74.219 (74.219)
+2020-11-17 17:46:49 - INFO - 
+ Epoch: 29	Training Loss 0.4239 	Training Prec@1 82.802 	Training Prec@5 99.270 	Validation Loss 1.9727 	Validation Prec@1 34.570 	Validation Prec@5 73.630 
+
+2020-11-17 17:46:49 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 17:46:49 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 17:46:49 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 17:46:49 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 17:46:51 - INFO - TRAINING - Epoch: [29][0/196]	Time 2.312 (2.312)	Data 0.953 (0.953)	Loss 0.5041 (0.5041)	Prec@1 77.734 (77.734)	Prec@5 98.438 (98.438)
+2020-11-17 17:48:23 - INFO - TRAINING - Epoch: [29][100/196]	Time 0.906 (0.928)	Data 0.000 (0.010)	Loss 0.4573 (0.4140)	Prec@1 85.156 (83.149)	Prec@5 98.438 (99.308)
+2020-11-17 17:49:50 - INFO - EVALUATING - Epoch: [29][0/40]	Time 2.401 (2.401)	Data 0.936 (0.936)	Loss 1.7916 (1.7916)	Prec@1 29.688 (29.688)	Prec@5 73.438 (73.438)
+2020-11-17 17:50:22 - INFO - 
+ Epoch: 30	Training Loss 0.4155 	Training Prec@1 83.128 	Training Prec@5 99.258 	Validation Loss 1.7958 	Validation Prec@1 28.740 	Validation Prec@5 73.670 
+
+2020-11-17 17:50:22 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 17:50:22 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 17:50:22 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 17:50:22 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 17:50:25 - INFO - TRAINING - Epoch: [30][0/196]	Time 2.116 (2.116)	Data 0.715 (0.715)	Loss 0.4414 (0.4414)	Prec@1 81.250 (81.250)	Prec@5 100.000 (100.000)
+2020-11-17 17:51:56 - INFO - TRAINING - Epoch: [30][100/196]	Time 0.888 (0.923)	Data 0.000 (0.007)	Loss 0.4290 (0.3883)	Prec@1 80.469 (84.294)	Prec@5 99.219 (99.373)
+2020-11-17 17:53:23 - INFO - EVALUATING - Epoch: [30][0/40]	Time 2.053 (2.053)	Data 0.847 (0.847)	Loss 1.9189 (1.9189)	Prec@1 31.641 (31.641)	Prec@5 73.438 (73.438)
+2020-11-17 17:53:55 - INFO - 
+ Epoch: 31	Training Loss 0.4003 	Training Prec@1 83.754 	Training Prec@5 99.348 	Validation Loss 1.9978 	Validation Prec@1 30.300 	Validation Prec@5 72.820 
+
+2020-11-17 17:53:55 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 17:53:55 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 17:53:55 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 17:53:55 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 17:53:57 - INFO - TRAINING - Epoch: [31][0/196]	Time 2.220 (2.220)	Data 0.878 (0.878)	Loss 0.3585 (0.3585)	Prec@1 86.328 (86.328)	Prec@5 99.609 (99.609)
+2020-11-17 17:55:28 - INFO - TRAINING - Epoch: [31][100/196]	Time 0.942 (0.920)	Data 0.000 (0.009)	Loss 0.4572 (0.3876)	Prec@1 81.250 (84.182)	Prec@5 99.219 (99.397)
+2020-11-17 17:56:55 - INFO - EVALUATING - Epoch: [31][0/40]	Time 2.082 (2.082)	Data 0.603 (0.603)	Loss 1.8876 (1.8876)	Prec@1 36.719 (36.719)	Prec@5 74.219 (74.219)
+2020-11-17 17:57:27 - INFO - 
+ Epoch: 32	Training Loss 0.4015 	Training Prec@1 83.716 	Training Prec@5 99.360 	Validation Loss 1.9108 	Validation Prec@1 37.070 	Validation Prec@5 75.550 
+
+2020-11-17 17:57:27 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 17:57:27 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 17:57:27 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 17:57:27 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 17:57:30 - INFO - TRAINING - Epoch: [32][0/196]	Time 2.471 (2.471)	Data 0.686 (0.686)	Loss 0.3813 (0.3813)	Prec@1 85.156 (85.156)	Prec@5 99.609 (99.609)
+2020-11-17 17:59:01 - INFO - TRAINING - Epoch: [32][100/196]	Time 0.935 (0.931)	Data 0.000 (0.007)	Loss 0.4531 (0.3899)	Prec@1 84.375 (84.360)	Prec@5 99.219 (99.315)
+2020-11-17 18:00:29 - INFO - EVALUATING - Epoch: [32][0/40]	Time 2.188 (2.188)	Data 0.517 (0.517)	Loss 1.9185 (1.9185)	Prec@1 25.000 (25.000)	Prec@5 70.312 (70.312)
+2020-11-17 18:01:01 - INFO - 
+ Epoch: 33	Training Loss 0.3981 	Training Prec@1 83.856 	Training Prec@5 99.316 	Validation Loss 1.9227 	Validation Prec@1 27.780 	Validation Prec@5 69.940 
+
+2020-11-17 18:01:01 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 18:01:01 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 18:01:01 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 18:01:01 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 18:01:03 - INFO - TRAINING - Epoch: [33][0/196]	Time 2.344 (2.344)	Data 0.962 (0.962)	Loss 0.3278 (0.3278)	Prec@1 85.938 (85.938)	Prec@5 99.219 (99.219)
+2020-11-17 18:02:34 - INFO - TRAINING - Epoch: [33][100/196]	Time 0.886 (0.925)	Data 0.000 (0.010)	Loss 0.4231 (0.3815)	Prec@1 83.203 (84.468)	Prec@5 98.438 (99.412)
+2020-11-17 18:04:01 - INFO - EVALUATING - Epoch: [33][0/40]	Time 2.154 (2.154)	Data 0.576 (0.576)	Loss 2.1566 (2.1566)	Prec@1 32.031 (32.031)	Prec@5 69.922 (69.922)
+2020-11-17 18:04:33 - INFO - 
+ Epoch: 34	Training Loss 0.3944 	Training Prec@1 84.098 	Training Prec@5 99.298 	Validation Loss 2.1428 	Validation Prec@1 32.370 	Validation Prec@5 71.960 
+
+2020-11-17 18:04:33 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 18:04:33 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 18:04:33 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 18:04:33 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 18:04:36 - INFO - TRAINING - Epoch: [34][0/196]	Time 2.419 (2.419)	Data 0.891 (0.891)	Loss 0.3257 (0.3257)	Prec@1 88.672 (88.672)	Prec@5 99.219 (99.219)
+2020-11-17 18:06:07 - INFO - TRAINING - Epoch: [34][100/196]	Time 0.877 (0.926)	Data 0.000 (0.009)	Loss 0.3360 (0.3792)	Prec@1 85.938 (84.305)	Prec@5 100.000 (99.489)
+2020-11-17 18:07:34 - INFO - EVALUATING - Epoch: [34][0/40]	Time 1.754 (1.754)	Data 0.506 (0.506)	Loss 2.4514 (2.4514)	Prec@1 21.094 (21.094)	Prec@5 57.422 (57.422)
+2020-11-17 18:08:06 - INFO - 
+ Epoch: 35	Training Loss 0.3919 	Training Prec@1 83.998 	Training Prec@5 99.380 	Validation Loss 2.4117 	Validation Prec@1 24.670 	Validation Prec@5 61.780 
+
+2020-11-17 18:08:06 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 18:08:06 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 18:08:06 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 18:08:06 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 18:08:08 - INFO - TRAINING - Epoch: [35][0/196]	Time 2.242 (2.242)	Data 0.837 (0.837)	Loss 0.4596 (0.4596)	Prec@1 79.297 (79.297)	Prec@5 98.438 (98.438)
+2020-11-17 18:09:39 - INFO - TRAINING - Epoch: [35][100/196]	Time 0.949 (0.921)	Data 0.000 (0.008)	Loss 0.2677 (0.3788)	Prec@1 87.109 (84.421)	Prec@5 100.000 (99.366)
+2020-11-17 18:11:06 - INFO - EVALUATING - Epoch: [35][0/40]	Time 1.922 (1.922)	Data 0.507 (0.507)	Loss 1.8580 (1.8580)	Prec@1 28.125 (28.125)	Prec@5 72.266 (72.266)
+2020-11-17 18:11:38 - INFO - 
+ Epoch: 36	Training Loss 0.3849 	Training Prec@1 84.308 	Training Prec@5 99.364 	Validation Loss 1.8780 	Validation Prec@1 28.750 	Validation Prec@5 70.190 
+
+2020-11-17 18:11:39 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 18:11:39 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 18:11:39 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 18:11:39 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 18:11:41 - INFO - TRAINING - Epoch: [36][0/196]	Time 2.364 (2.364)	Data 0.879 (0.879)	Loss 0.4149 (0.4149)	Prec@1 82.422 (82.422)	Prec@5 98.828 (98.828)
+2020-11-17 18:13:12 - INFO - TRAINING - Epoch: [36][100/196]	Time 0.919 (0.924)	Data 0.000 (0.009)	Loss 0.3882 (0.3821)	Prec@1 84.375 (84.483)	Prec@5 99.219 (99.389)
+2020-11-17 18:14:39 - INFO - EVALUATING - Epoch: [36][0/40]	Time 2.136 (2.136)	Data 0.608 (0.608)	Loss 1.7879 (1.7879)	Prec@1 25.391 (25.391)	Prec@5 69.922 (69.922)
+2020-11-17 18:15:11 - INFO - 
+ Epoch: 37	Training Loss 0.3856 	Training Prec@1 84.396 	Training Prec@5 99.344 	Validation Loss 1.7696 	Validation Prec@1 29.360 	Validation Prec@5 70.160 
+
+2020-11-17 18:15:11 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 18:15:11 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 18:15:11 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 18:15:11 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 18:15:14 - INFO - TRAINING - Epoch: [37][0/196]	Time 2.301 (2.301)	Data 0.959 (0.959)	Loss 0.4138 (0.4138)	Prec@1 83.203 (83.203)	Prec@5 98.828 (98.828)
+2020-11-17 18:16:45 - INFO - TRAINING - Epoch: [37][100/196]	Time 0.892 (0.923)	Data 0.000 (0.010)	Loss 0.4077 (0.3722)	Prec@1 83.203 (84.862)	Prec@5 99.609 (99.466)
+2020-11-17 18:18:12 - INFO - EVALUATING - Epoch: [37][0/40]	Time 1.911 (1.911)	Data 0.519 (0.519)	Loss 2.2821 (2.2821)	Prec@1 29.688 (29.688)	Prec@5 71.875 (71.875)
+2020-11-17 18:18:44 - INFO - 
+ Epoch: 38	Training Loss 0.3753 	Training Prec@1 84.550 	Training Prec@5 99.448 	Validation Loss 2.2788 	Validation Prec@1 31.620 	Validation Prec@5 71.760 
+
+2020-11-17 18:18:44 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 18:18:44 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 18:18:44 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 18:18:44 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 18:18:46 - INFO - TRAINING - Epoch: [38][0/196]	Time 2.495 (2.495)	Data 0.951 (0.951)	Loss 0.3827 (0.3827)	Prec@1 80.859 (80.859)	Prec@5 100.000 (100.000)
+2020-11-17 18:20:17 - INFO - TRAINING - Epoch: [38][100/196]	Time 0.875 (0.929)	Data 0.000 (0.010)	Loss 0.3998 (0.3656)	Prec@1 84.375 (85.226)	Prec@5 98.828 (99.431)
+2020-11-17 18:21:45 - INFO - EVALUATING - Epoch: [38][0/40]	Time 1.865 (1.865)	Data 0.540 (0.540)	Loss 1.7954 (1.7954)	Prec@1 32.812 (32.812)	Prec@5 74.219 (74.219)
+2020-11-17 18:22:17 - INFO - 
+ Epoch: 39	Training Loss 0.3724 	Training Prec@1 84.942 	Training Prec@5 99.430 	Validation Loss 1.8140 	Validation Prec@1 32.660 	Validation Prec@5 74.390 
+
+2020-11-17 18:22:17 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 18:22:17 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 18:22:17 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 18:22:17 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 18:22:19 - INFO - TRAINING - Epoch: [39][0/196]	Time 2.355 (2.355)	Data 0.788 (0.788)	Loss 0.3549 (0.3549)	Prec@1 83.594 (83.594)	Prec@5 99.219 (99.219)
+2020-11-17 18:23:50 - INFO - TRAINING - Epoch: [39][100/196]	Time 0.876 (0.927)	Data 0.000 (0.008)	Loss 0.3551 (0.3633)	Prec@1 85.547 (85.253)	Prec@5 98.828 (99.389)
+2020-11-17 18:25:17 - INFO - EVALUATING - Epoch: [39][0/40]	Time 1.823 (1.823)	Data 0.596 (0.596)	Loss 1.9449 (1.9449)	Prec@1 23.438 (23.438)	Prec@5 67.188 (67.188)
+2020-11-17 18:25:49 - INFO - 
+ Epoch: 40	Training Loss 0.3704 	Training Prec@1 84.966 	Training Prec@5 99.374 	Validation Loss 1.9583 	Validation Prec@1 25.870 	Validation Prec@5 69.040 
+
+2020-11-17 18:25:49 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 18:25:49 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 18:25:49 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 18:25:49 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 18:25:52 - INFO - TRAINING - Epoch: [40][0/196]	Time 2.222 (2.222)	Data 0.704 (0.704)	Loss 0.3032 (0.3032)	Prec@1 87.500 (87.500)	Prec@5 99.609 (99.609)
+2020-11-17 18:27:23 - INFO - TRAINING - Epoch: [40][100/196]	Time 0.890 (0.926)	Data 0.000 (0.007)	Loss 0.3667 (0.3625)	Prec@1 84.375 (85.137)	Prec@5 100.000 (99.462)
+2020-11-17 18:28:50 - INFO - EVALUATING - Epoch: [40][0/40]	Time 2.119 (2.119)	Data 0.724 (0.724)	Loss 2.1056 (2.1056)	Prec@1 20.703 (20.703)	Prec@5 68.750 (68.750)
+2020-11-17 18:29:22 - INFO - 
+ Epoch: 41	Training Loss 0.3692 	Training Prec@1 84.800 	Training Prec@5 99.434 	Validation Loss 2.0643 	Validation Prec@1 23.010 	Validation Prec@5 69.450 
+
+2020-11-17 18:29:22 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 18:29:22 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 18:29:22 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 18:29:22 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 18:29:25 - INFO - TRAINING - Epoch: [41][0/196]	Time 2.326 (2.326)	Data 0.737 (0.737)	Loss 0.3906 (0.3906)	Prec@1 83.594 (83.594)	Prec@5 99.609 (99.609)
+2020-11-17 18:30:55 - INFO - TRAINING - Epoch: [41][100/196]	Time 0.882 (0.922)	Data 0.000 (0.007)	Loss 0.3832 (0.3650)	Prec@1 83.984 (84.940)	Prec@5 99.609 (99.505)
+2020-11-17 18:32:22 - INFO - EVALUATING - Epoch: [41][0/40]	Time 2.091 (2.091)	Data 0.564 (0.564)	Loss 2.1188 (2.1188)	Prec@1 25.391 (25.391)	Prec@5 71.875 (71.875)
+2020-11-17 18:32:54 - INFO - 
+ Epoch: 42	Training Loss 0.3710 	Training Prec@1 84.822 	Training Prec@5 99.446 	Validation Loss 2.1497 	Validation Prec@1 25.550 	Validation Prec@5 69.960 
+
+2020-11-17 18:32:54 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 18:32:54 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 18:32:54 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 18:32:54 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 18:32:56 - INFO - TRAINING - Epoch: [42][0/196]	Time 2.011 (2.011)	Data 0.631 (0.631)	Loss 0.3373 (0.3373)	Prec@1 85.547 (85.547)	Prec@5 100.000 (100.000)
+2020-11-17 18:34:27 - INFO - TRAINING - Epoch: [42][100/196]	Time 0.896 (0.919)	Data 0.000 (0.006)	Loss 0.3722 (0.3490)	Prec@1 84.375 (85.632)	Prec@5 100.000 (99.578)
+2020-11-17 18:35:54 - INFO - EVALUATING - Epoch: [42][0/40]	Time 1.797 (1.797)	Data 0.542 (0.542)	Loss 2.6158 (2.6158)	Prec@1 19.922 (19.922)	Prec@5 69.531 (69.531)
+2020-11-17 18:36:26 - INFO - 
+ Epoch: 43	Training Loss 0.3626 	Training Prec@1 85.140 	Training Prec@5 99.486 	Validation Loss 2.5489 	Validation Prec@1 21.490 	Validation Prec@5 69.680 
+
+2020-11-17 18:36:26 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 18:36:26 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 18:36:26 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 18:36:26 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 18:36:29 - INFO - TRAINING - Epoch: [43][0/196]	Time 2.711 (2.711)	Data 0.862 (0.862)	Loss 0.3546 (0.3546)	Prec@1 85.156 (85.156)	Prec@5 99.219 (99.219)
+2020-11-17 18:38:00 - INFO - TRAINING - Epoch: [43][100/196]	Time 0.880 (0.930)	Data 0.000 (0.009)	Loss 0.3467 (0.3573)	Prec@1 84.766 (85.473)	Prec@5 99.609 (99.482)
+2020-11-17 18:39:27 - INFO - EVALUATING - Epoch: [43][0/40]	Time 1.802 (1.802)	Data 0.480 (0.480)	Loss 2.0953 (2.0953)	Prec@1 27.734 (27.734)	Prec@5 66.406 (66.406)
+2020-11-17 18:40:00 - INFO - 
+ Epoch: 44	Training Loss 0.3602 	Training Prec@1 85.318 	Training Prec@5 99.466 	Validation Loss 2.1508 	Validation Prec@1 29.410 	Validation Prec@5 68.610 
+
+2020-11-17 18:40:00 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 18:40:00 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 18:40:00 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 18:40:00 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 18:40:02 - INFO - TRAINING - Epoch: [44][0/196]	Time 2.471 (2.471)	Data 0.785 (0.785)	Loss 0.2995 (0.2995)	Prec@1 88.281 (88.281)	Prec@5 100.000 (100.000)
+2020-11-17 18:41:34 - INFO - TRAINING - Epoch: [44][100/196]	Time 0.870 (0.931)	Data 0.000 (0.008)	Loss 0.3949 (0.3484)	Prec@1 82.031 (85.616)	Prec@5 99.609 (99.544)
+2020-11-17 18:43:01 - INFO - EVALUATING - Epoch: [44][0/40]	Time 2.167 (2.167)	Data 0.816 (0.816)	Loss 2.4398 (2.4398)	Prec@1 20.312 (20.312)	Prec@5 70.703 (70.703)
+2020-11-17 18:43:33 - INFO - 
+ Epoch: 45	Training Loss 0.3568 	Training Prec@1 85.302 	Training Prec@5 99.506 	Validation Loss 2.3607 	Validation Prec@1 23.710 	Validation Prec@5 71.250 
+
+2020-11-17 18:43:33 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 18:43:33 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 18:43:33 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 18:43:33 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 18:43:35 - INFO - TRAINING - Epoch: [45][0/196]	Time 2.318 (2.318)	Data 0.802 (0.802)	Loss 0.3302 (0.3302)	Prec@1 86.719 (86.719)	Prec@5 100.000 (100.000)
+2020-11-17 18:45:06 - INFO - TRAINING - Epoch: [45][100/196]	Time 0.923 (0.924)	Data 0.000 (0.008)	Loss 0.4138 (0.3379)	Prec@1 83.203 (86.177)	Prec@5 99.219 (99.555)
+2020-11-17 18:46:34 - INFO - EVALUATING - Epoch: [45][0/40]	Time 1.797 (1.797)	Data 0.596 (0.596)	Loss 1.8429 (1.8429)	Prec@1 28.125 (28.125)	Prec@5 67.969 (67.969)
+2020-11-17 18:47:06 - INFO - 
+ Epoch: 46	Training Loss 0.3480 	Training Prec@1 85.870 	Training Prec@5 99.478 	Validation Loss 1.8539 	Validation Prec@1 29.610 	Validation Prec@5 71.400 
+
+2020-11-17 18:47:06 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 18:47:06 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 18:47:06 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 18:47:06 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 18:47:09 - INFO - TRAINING - Epoch: [46][0/196]	Time 2.392 (2.392)	Data 0.822 (0.822)	Loss 0.3103 (0.3103)	Prec@1 87.891 (87.891)	Prec@5 99.219 (99.219)
+2020-11-17 18:48:39 - INFO - TRAINING - Epoch: [46][100/196]	Time 0.938 (0.918)	Data 0.000 (0.008)	Loss 0.3595 (0.3428)	Prec@1 84.766 (85.791)	Prec@5 99.609 (99.524)
+2020-11-17 18:50:06 - INFO - EVALUATING - Epoch: [46][0/40]	Time 2.106 (2.106)	Data 0.883 (0.883)	Loss 2.6173 (2.6173)	Prec@1 26.562 (26.562)	Prec@5 60.156 (60.156)
+2020-11-17 18:50:39 - INFO - 
+ Epoch: 47	Training Loss 0.3487 	Training Prec@1 85.746 	Training Prec@5 99.482 	Validation Loss 2.5043 	Validation Prec@1 24.880 	Validation Prec@5 63.910 
+
+2020-11-17 18:50:39 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 18:50:39 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 18:50:39 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 18:50:39 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 18:50:41 - INFO - TRAINING - Epoch: [47][0/196]	Time 2.117 (2.117)	Data 0.796 (0.796)	Loss 0.3070 (0.3070)	Prec@1 87.891 (87.891)	Prec@5 99.219 (99.219)
+2020-11-17 18:52:12 - INFO - TRAINING - Epoch: [47][100/196]	Time 0.983 (0.922)	Data 0.000 (0.008)	Loss 0.4542 (0.3378)	Prec@1 82.812 (86.038)	Prec@5 99.219 (99.551)
+2020-11-17 18:53:39 - INFO - EVALUATING - Epoch: [47][0/40]	Time 2.165 (2.165)	Data 0.603 (0.603)	Loss 1.7851 (1.7851)	Prec@1 30.078 (30.078)	Prec@5 74.219 (74.219)
+2020-11-17 18:54:11 - INFO - 
+ Epoch: 48	Training Loss 0.3492 	Training Prec@1 85.726 	Training Prec@5 99.454 	Validation Loss 1.8281 	Validation Prec@1 30.230 	Validation Prec@5 74.330 
+
+2020-11-17 18:54:11 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 18:54:11 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 18:54:11 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 18:54:11 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 18:54:14 - INFO - TRAINING - Epoch: [48][0/196]	Time 2.397 (2.397)	Data 0.950 (0.950)	Loss 0.3782 (0.3782)	Prec@1 83.984 (83.984)	Prec@5 100.000 (100.000)
+2020-11-17 18:55:45 - INFO - TRAINING - Epoch: [48][100/196]	Time 0.875 (0.924)	Data 0.000 (0.010)	Loss 0.3817 (0.3361)	Prec@1 87.500 (86.054)	Prec@5 98.438 (99.520)
+2020-11-17 18:57:12 - INFO - EVALUATING - Epoch: [48][0/40]	Time 1.956 (1.956)	Data 0.575 (0.575)	Loss 1.8982 (1.8982)	Prec@1 29.688 (29.688)	Prec@5 70.312 (70.312)
+2020-11-17 18:57:44 - INFO - 
+ Epoch: 49	Training Loss 0.3466 	Training Prec@1 85.732 	Training Prec@5 99.470 	Validation Loss 1.9059 	Validation Prec@1 30.740 	Validation Prec@5 73.650 
+
+2020-11-17 18:57:44 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 18:57:44 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 18:57:44 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 18:57:44 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 18:57:46 - INFO - TRAINING - Epoch: [49][0/196]	Time 2.221 (2.221)	Data 0.707 (0.707)	Loss 0.3804 (0.3804)	Prec@1 85.547 (85.547)	Prec@5 99.609 (99.609)
+2020-11-17 18:59:17 - INFO - TRAINING - Epoch: [49][100/196]	Time 0.885 (0.923)	Data 0.000 (0.007)	Loss 0.4106 (0.3352)	Prec@1 82.031 (86.170)	Prec@5 98.828 (99.505)
+2020-11-17 19:00:44 - INFO - EVALUATING - Epoch: [49][0/40]	Time 1.831 (1.831)	Data 0.633 (0.633)	Loss 2.0006 (2.0006)	Prec@1 25.391 (25.391)	Prec@5 70.703 (70.703)
+2020-11-17 19:01:17 - INFO - 
+ Epoch: 50	Training Loss 0.3453 	Training Prec@1 85.650 	Training Prec@5 99.510 	Validation Loss 1.9578 	Validation Prec@1 29.240 	Validation Prec@5 70.350 
+
+2020-11-17 19:01:17 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 19:01:17 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 19:01:17 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 19:01:17 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 19:01:20 - INFO - TRAINING - Epoch: [50][0/196]	Time 2.573 (2.573)	Data 0.845 (0.845)	Loss 0.2973 (0.2973)	Prec@1 85.938 (85.938)	Prec@5 99.609 (99.609)
+2020-11-17 19:02:50 - INFO - TRAINING - Epoch: [50][100/196]	Time 0.887 (0.923)	Data 0.000 (0.009)	Loss 0.4902 (0.3459)	Prec@1 79.297 (85.872)	Prec@5 99.609 (99.501)
+2020-11-17 19:04:17 - INFO - EVALUATING - Epoch: [50][0/40]	Time 1.876 (1.876)	Data 0.540 (0.540)	Loss 1.7470 (1.7470)	Prec@1 28.906 (28.906)	Prec@5 71.875 (71.875)
+2020-11-17 19:04:50 - INFO - 
+ Epoch: 51	Training Loss 0.3505 	Training Prec@1 85.676 	Training Prec@5 99.472 	Validation Loss 1.7814 	Validation Prec@1 30.630 	Validation Prec@5 71.890 
+
+2020-11-17 19:04:50 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 19:04:50 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 19:04:50 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 19:04:50 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 19:04:52 - INFO - TRAINING - Epoch: [51][0/196]	Time 2.403 (2.403)	Data 0.737 (0.737)	Loss 0.4160 (0.4160)	Prec@1 81.641 (81.641)	Prec@5 99.219 (99.219)
+2020-11-17 19:06:23 - INFO - TRAINING - Epoch: [51][100/196]	Time 0.887 (0.922)	Data 0.000 (0.007)	Loss 0.3528 (0.3233)	Prec@1 86.719 (86.599)	Prec@5 100.000 (99.459)
+2020-11-17 19:07:50 - INFO - EVALUATING - Epoch: [51][0/40]	Time 1.967 (1.967)	Data 0.745 (0.745)	Loss 1.9162 (1.9162)	Prec@1 27.734 (27.734)	Prec@5 73.047 (73.047)
+2020-11-17 19:08:22 - INFO - 
+ Epoch: 52	Training Loss 0.3388 	Training Prec@1 86.082 	Training Prec@5 99.454 	Validation Loss 1.8712 	Validation Prec@1 30.050 	Validation Prec@5 73.880 
+
+2020-11-17 19:08:22 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 19:08:22 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 19:08:22 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 19:08:22 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 19:08:25 - INFO - TRAINING - Epoch: [52][0/196]	Time 2.304 (2.304)	Data 0.787 (0.787)	Loss 0.3537 (0.3537)	Prec@1 85.938 (85.938)	Prec@5 99.609 (99.609)
+2020-11-17 19:09:56 - INFO - TRAINING - Epoch: [52][100/196]	Time 0.890 (0.923)	Data 0.000 (0.008)	Loss 0.2775 (0.3257)	Prec@1 88.281 (86.475)	Prec@5 100.000 (99.478)
+2020-11-17 19:11:23 - INFO - EVALUATING - Epoch: [52][0/40]	Time 1.955 (1.955)	Data 0.633 (0.633)	Loss 1.9825 (1.9825)	Prec@1 31.641 (31.641)	Prec@5 73.047 (73.047)
+2020-11-17 19:11:55 - INFO - 
+ Epoch: 53	Training Loss 0.3356 	Training Prec@1 86.090 	Training Prec@5 99.506 	Validation Loss 2.0048 	Validation Prec@1 31.880 	Validation Prec@5 73.940 
+
+2020-11-17 19:11:55 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 19:11:55 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 19:11:55 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 19:11:55 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 19:11:57 - INFO - TRAINING - Epoch: [53][0/196]	Time 2.197 (2.197)	Data 0.845 (0.845)	Loss 0.3116 (0.3116)	Prec@1 86.719 (86.719)	Prec@5 98.828 (98.828)
+2020-11-17 19:13:28 - INFO - TRAINING - Epoch: [53][100/196]	Time 1.008 (0.922)	Data 0.000 (0.009)	Loss 0.3458 (0.3277)	Prec@1 85.547 (86.699)	Prec@5 98.438 (99.536)
+2020-11-17 19:14:55 - INFO - EVALUATING - Epoch: [53][0/40]	Time 1.910 (1.910)	Data 0.668 (0.668)	Loss 2.0837 (2.0837)	Prec@1 22.266 (22.266)	Prec@5 71.094 (71.094)
+2020-11-17 19:15:28 - INFO - 
+ Epoch: 54	Training Loss 0.3354 	Training Prec@1 86.344 	Training Prec@5 99.522 	Validation Loss 2.0532 	Validation Prec@1 26.890 	Validation Prec@5 69.730 
+
+2020-11-17 19:15:28 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 19:15:28 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 19:15:28 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 19:15:28 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 19:15:30 - INFO - TRAINING - Epoch: [54][0/196]	Time 2.496 (2.496)	Data 1.015 (1.015)	Loss 0.3581 (0.3581)	Prec@1 83.594 (83.594)	Prec@5 99.609 (99.609)
+2020-11-17 19:17:01 - INFO - TRAINING - Epoch: [54][100/196]	Time 0.943 (0.926)	Data 0.000 (0.010)	Loss 0.3261 (0.3343)	Prec@1 85.938 (86.282)	Prec@5 100.000 (99.551)
+2020-11-17 19:18:28 - INFO - EVALUATING - Epoch: [54][0/40]	Time 1.853 (1.853)	Data 0.617 (0.617)	Loss 1.9249 (1.9249)	Prec@1 21.875 (21.875)	Prec@5 67.969 (67.969)
+2020-11-17 19:19:00 - INFO - 
+ Epoch: 55	Training Loss 0.3397 	Training Prec@1 85.998 	Training Prec@5 99.530 	Validation Loss 1.9059 	Validation Prec@1 25.410 	Validation Prec@5 68.940 
+
+2020-11-17 19:19:00 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 19:19:00 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 19:19:00 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 19:19:00 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 19:19:03 - INFO - TRAINING - Epoch: [55][0/196]	Time 2.453 (2.453)	Data 1.031 (1.031)	Loss 0.3317 (0.3317)	Prec@1 87.109 (87.109)	Prec@5 99.609 (99.609)
+2020-11-17 19:20:35 - INFO - TRAINING - Epoch: [55][100/196]	Time 0.879 (0.931)	Data 0.000 (0.010)	Loss 0.2576 (0.3150)	Prec@1 89.062 (87.063)	Prec@5 99.609 (99.575)
+2020-11-17 19:22:02 - INFO - EVALUATING - Epoch: [55][0/40]	Time 2.193 (2.193)	Data 0.551 (0.551)	Loss 1.9666 (1.9666)	Prec@1 24.219 (24.219)	Prec@5 69.922 (69.922)
+2020-11-17 19:22:34 - INFO - 
+ Epoch: 56	Training Loss 0.3288 	Training Prec@1 86.484 	Training Prec@5 99.512 	Validation Loss 2.0241 	Validation Prec@1 27.330 	Validation Prec@5 69.010 
+
+2020-11-17 19:22:34 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 19:22:34 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 19:22:34 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 19:22:34 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 19:22:36 - INFO - TRAINING - Epoch: [56][0/196]	Time 2.260 (2.260)	Data 0.898 (0.898)	Loss 0.3200 (0.3200)	Prec@1 87.109 (87.109)	Prec@5 99.609 (99.609)
+2020-11-17 19:24:08 - INFO - TRAINING - Epoch: [56][100/196]	Time 0.974 (0.928)	Data 0.000 (0.009)	Loss 0.3271 (0.3218)	Prec@1 86.328 (86.750)	Prec@5 99.609 (99.613)
+2020-11-17 19:25:34 - INFO - EVALUATING - Epoch: [56][0/40]	Time 1.849 (1.849)	Data 0.555 (0.555)	Loss 1.9368 (1.9368)	Prec@1 35.156 (35.156)	Prec@5 75.000 (75.000)
+2020-11-17 19:26:06 - INFO - 
+ Epoch: 57	Training Loss 0.3310 	Training Prec@1 86.358 	Training Prec@5 99.584 	Validation Loss 1.9521 	Validation Prec@1 34.120 	Validation Prec@5 72.740 
+
+2020-11-17 19:26:06 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 19:26:06 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 19:26:06 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 19:26:06 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 19:26:08 - INFO - TRAINING - Epoch: [57][0/196]	Time 2.050 (2.050)	Data 0.700 (0.700)	Loss 0.3125 (0.3125)	Prec@1 89.844 (89.844)	Prec@5 99.609 (99.609)
+2020-11-17 19:27:39 - INFO - TRAINING - Epoch: [57][100/196]	Time 0.968 (0.919)	Data 0.000 (0.007)	Loss 0.2186 (0.3242)	Prec@1 91.016 (86.668)	Prec@5 100.000 (99.571)
+2020-11-17 19:29:07 - INFO - EVALUATING - Epoch: [57][0/40]	Time 2.047 (2.047)	Data 0.755 (0.755)	Loss 1.7556 (1.7556)	Prec@1 28.516 (28.516)	Prec@5 79.688 (79.688)
+2020-11-17 19:29:39 - INFO - 
+ Epoch: 58	Training Loss 0.3404 	Training Prec@1 85.826 	Training Prec@5 99.510 	Validation Loss 1.7548 	Validation Prec@1 31.420 	Validation Prec@5 76.740 
+
+2020-11-17 19:29:39 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 19:29:39 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 19:29:39 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 19:29:39 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 19:29:42 - INFO - TRAINING - Epoch: [58][0/196]	Time 2.456 (2.456)	Data 0.681 (0.681)	Loss 0.3434 (0.3434)	Prec@1 84.766 (84.766)	Prec@5 99.219 (99.219)
+2020-11-17 19:31:13 - INFO - TRAINING - Epoch: [58][100/196]	Time 0.899 (0.926)	Data 0.000 (0.007)	Loss 0.3302 (0.3224)	Prec@1 85.547 (86.610)	Prec@5 99.219 (99.544)
+2020-11-17 19:32:40 - INFO - EVALUATING - Epoch: [58][0/40]	Time 2.166 (2.166)	Data 0.694 (0.694)	Loss 1.9379 (1.9379)	Prec@1 28.906 (28.906)	Prec@5 73.828 (73.828)
+2020-11-17 19:33:12 - INFO - 
+ Epoch: 59	Training Loss 0.3300 	Training Prec@1 86.476 	Training Prec@5 99.538 	Validation Loss 1.9738 	Validation Prec@1 31.010 	Validation Prec@5 72.670 
+
+2020-11-17 19:33:12 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 19:33:12 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 19:33:12 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 19:33:12 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 19:33:14 - INFO - TRAINING - Epoch: [59][0/196]	Time 2.004 (2.004)	Data 0.730 (0.730)	Loss 0.3040 (0.3040)	Prec@1 85.547 (85.547)	Prec@5 99.219 (99.219)
+2020-11-17 19:34:45 - INFO - TRAINING - Epoch: [59][100/196]	Time 0.890 (0.917)	Data 0.000 (0.007)	Loss 0.3199 (0.3129)	Prec@1 87.891 (87.055)	Prec@5 99.219 (99.559)
+2020-11-17 19:36:12 - INFO - EVALUATING - Epoch: [59][0/40]	Time 2.068 (2.068)	Data 0.636 (0.636)	Loss 2.4286 (2.4286)	Prec@1 24.609 (24.609)	Prec@5 65.625 (65.625)
+2020-11-17 19:36:44 - INFO - 
+ Epoch: 60	Training Loss 0.3215 	Training Prec@1 86.870 	Training Prec@5 99.538 	Validation Loss 2.3599 	Validation Prec@1 25.060 	Validation Prec@5 67.020 
+
+2020-11-17 19:36:44 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 19:36:44 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 19:36:44 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 19:36:44 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 19:36:46 - INFO - TRAINING - Epoch: [60][0/196]	Time 2.092 (2.092)	Data 0.853 (0.853)	Loss 0.3197 (0.3197)	Prec@1 85.156 (85.156)	Prec@5 99.609 (99.609)
+2020-11-17 19:38:16 - INFO - TRAINING - Epoch: [60][100/196]	Time 0.895 (0.916)	Data 0.000 (0.009)	Loss 0.4574 (0.3212)	Prec@1 83.594 (86.688)	Prec@5 99.219 (99.559)
+2020-11-17 19:39:44 - INFO - EVALUATING - Epoch: [60][0/40]	Time 2.125 (2.125)	Data 0.862 (0.862)	Loss 2.5457 (2.5457)	Prec@1 22.266 (22.266)	Prec@5 68.359 (68.359)
+2020-11-17 19:40:16 - INFO - 
+ Epoch: 61	Training Loss 0.3266 	Training Prec@1 86.584 	Training Prec@5 99.562 	Validation Loss 2.5027 	Validation Prec@1 26.590 	Validation Prec@5 69.590 
+
+2020-11-17 19:40:16 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 19:40:16 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 19:40:16 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 19:40:16 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 19:40:19 - INFO - TRAINING - Epoch: [61][0/196]	Time 2.474 (2.474)	Data 0.848 (0.848)	Loss 0.3954 (0.3954)	Prec@1 82.031 (82.031)	Prec@5 100.000 (100.000)
+2020-11-17 19:41:50 - INFO - TRAINING - Epoch: [61][100/196]	Time 0.900 (0.930)	Data 0.000 (0.009)	Loss 0.2836 (0.3087)	Prec@1 88.281 (87.272)	Prec@5 100.000 (99.698)
+2020-11-17 19:43:17 - INFO - EVALUATING - Epoch: [61][0/40]	Time 1.940 (1.940)	Data 0.505 (0.505)	Loss 1.8981 (1.8981)	Prec@1 28.125 (28.125)	Prec@5 69.922 (69.922)
+2020-11-17 19:43:50 - INFO - 
+ Epoch: 62	Training Loss 0.3208 	Training Prec@1 86.918 	Training Prec@5 99.612 	Validation Loss 1.9011 	Validation Prec@1 31.540 	Validation Prec@5 70.770 
+
+2020-11-17 19:43:50 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 19:43:50 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 19:43:50 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 19:43:50 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 19:43:52 - INFO - TRAINING - Epoch: [62][0/196]	Time 2.471 (2.471)	Data 0.782 (0.782)	Loss 0.3030 (0.3030)	Prec@1 86.719 (86.719)	Prec@5 98.828 (98.828)
+2020-11-17 19:45:23 - INFO - TRAINING - Epoch: [62][100/196]	Time 0.909 (0.922)	Data 0.000 (0.008)	Loss 0.2959 (0.3066)	Prec@1 85.547 (87.330)	Prec@5 99.609 (99.640)
+2020-11-17 19:46:50 - INFO - EVALUATING - Epoch: [62][0/40]	Time 2.478 (2.478)	Data 0.856 (0.856)	Loss 1.9417 (1.9417)	Prec@1 25.391 (25.391)	Prec@5 76.172 (76.172)
+2020-11-17 19:47:22 - INFO - 
+ Epoch: 63	Training Loss 0.3187 	Training Prec@1 86.834 	Training Prec@5 99.588 	Validation Loss 2.0027 	Validation Prec@1 27.840 	Validation Prec@5 72.660 
+
+2020-11-17 19:47:22 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 19:47:22 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 19:47:22 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 19:47:22 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 19:47:25 - INFO - TRAINING - Epoch: [63][0/196]	Time 2.427 (2.427)	Data 0.868 (0.868)	Loss 0.2632 (0.2632)	Prec@1 88.281 (88.281)	Prec@5 99.609 (99.609)
+2020-11-17 19:48:55 - INFO - TRAINING - Epoch: [63][100/196]	Time 0.878 (0.921)	Data 0.000 (0.009)	Loss 0.4067 (0.3129)	Prec@1 83.594 (86.823)	Prec@5 98.828 (99.609)
+2020-11-17 19:50:23 - INFO - EVALUATING - Epoch: [63][0/40]	Time 2.184 (2.184)	Data 0.859 (0.859)	Loss 1.8007 (1.8007)	Prec@1 30.078 (30.078)	Prec@5 72.656 (72.656)
+2020-11-17 19:50:55 - INFO - 
+ Epoch: 64	Training Loss 0.3248 	Training Prec@1 86.474 	Training Prec@5 99.548 	Validation Loss 1.8092 	Validation Prec@1 30.070 	Validation Prec@5 72.580 
+
+2020-11-17 19:50:55 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 19:50:55 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 19:50:55 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 19:50:55 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 19:50:57 - INFO - TRAINING - Epoch: [64][0/196]	Time 2.053 (2.053)	Data 0.766 (0.766)	Loss 0.3173 (0.3173)	Prec@1 86.328 (86.328)	Prec@5 99.609 (99.609)
+2020-11-17 19:52:28 - INFO - TRAINING - Epoch: [64][100/196]	Time 0.884 (0.919)	Data 0.000 (0.008)	Loss 0.3713 (0.3085)	Prec@1 83.203 (87.310)	Prec@5 100.000 (99.633)
+2020-11-17 19:53:55 - INFO - EVALUATING - Epoch: [64][0/40]	Time 1.975 (1.975)	Data 0.485 (0.485)	Loss 1.8812 (1.8812)	Prec@1 28.516 (28.516)	Prec@5 72.266 (72.266)
+2020-11-17 19:54:27 - INFO - 
+ Epoch: 65	Training Loss 0.3155 	Training Prec@1 87.092 	Training Prec@5 99.602 	Validation Loss 1.9466 	Validation Prec@1 28.510 	Validation Prec@5 72.260 
+
+2020-11-17 19:54:27 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 19:54:27 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 19:54:27 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 19:54:27 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 19:54:30 - INFO - TRAINING - Epoch: [65][0/196]	Time 2.662 (2.662)	Data 0.719 (0.719)	Loss 0.2926 (0.2926)	Prec@1 85.547 (85.547)	Prec@5 98.828 (98.828)
+2020-11-17 19:56:01 - INFO - TRAINING - Epoch: [65][100/196]	Time 0.911 (0.926)	Data 0.000 (0.007)	Loss 0.3939 (0.3009)	Prec@1 85.156 (87.593)	Prec@5 99.219 (99.667)
+2020-11-17 19:57:28 - INFO - EVALUATING - Epoch: [65][0/40]	Time 1.786 (1.786)	Data 0.532 (0.532)	Loss 2.1966 (2.1966)	Prec@1 23.828 (23.828)	Prec@5 72.266 (72.266)
+2020-11-17 19:58:00 - INFO - 
+ Epoch: 66	Training Loss 0.3121 	Training Prec@1 87.124 	Training Prec@5 99.632 	Validation Loss 2.2511 	Validation Prec@1 24.300 	Validation Prec@5 72.920 
+
+2020-11-17 19:58:00 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 19:58:00 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 19:58:00 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 19:58:00 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 19:58:02 - INFO - TRAINING - Epoch: [66][0/196]	Time 2.530 (2.530)	Data 0.766 (0.766)	Loss 0.3183 (0.3183)	Prec@1 84.375 (84.375)	Prec@5 100.000 (100.000)
+2020-11-17 19:59:33 - INFO - TRAINING - Epoch: [66][100/196]	Time 0.882 (0.927)	Data 0.000 (0.008)	Loss 0.3003 (0.3037)	Prec@1 89.453 (87.523)	Prec@5 99.609 (99.544)
+2020-11-17 20:01:01 - INFO - EVALUATING - Epoch: [66][0/40]	Time 2.116 (2.116)	Data 0.756 (0.756)	Loss 2.3211 (2.3211)	Prec@1 29.297 (29.297)	Prec@5 74.609 (74.609)
+2020-11-17 20:01:34 - INFO - 
+ Epoch: 67	Training Loss 0.3167 	Training Prec@1 86.818 	Training Prec@5 99.530 	Validation Loss 2.2632 	Validation Prec@1 31.400 	Validation Prec@5 72.930 
+
+2020-11-17 20:01:34 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 20:01:34 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 20:01:34 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 20:01:34 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 20:01:36 - INFO - TRAINING - Epoch: [67][0/196]	Time 2.072 (2.072)	Data 0.614 (0.614)	Loss 0.2964 (0.2964)	Prec@1 89.844 (89.844)	Prec@5 100.000 (100.000)
+2020-11-17 20:03:06 - INFO - TRAINING - Epoch: [67][100/196]	Time 0.880 (0.919)	Data 0.000 (0.006)	Loss 0.3019 (0.3038)	Prec@1 86.328 (87.295)	Prec@5 99.609 (99.613)
+2020-11-17 20:04:33 - INFO - EVALUATING - Epoch: [67][0/40]	Time 1.775 (1.775)	Data 0.563 (0.563)	Loss 2.2195 (2.2195)	Prec@1 27.734 (27.734)	Prec@5 74.609 (74.609)
+2020-11-17 20:05:05 - INFO - 
+ Epoch: 68	Training Loss 0.3087 	Training Prec@1 87.196 	Training Prec@5 99.630 	Validation Loss 2.2036 	Validation Prec@1 29.620 	Validation Prec@5 72.660 
+
+2020-11-17 20:05:05 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 20:05:05 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 20:05:05 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 20:05:05 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 20:05:07 - INFO - TRAINING - Epoch: [68][0/196]	Time 1.995 (1.995)	Data 0.610 (0.610)	Loss 0.3868 (0.3868)	Prec@1 86.719 (86.719)	Prec@5 99.609 (99.609)
+2020-11-17 20:06:38 - INFO - TRAINING - Epoch: [68][100/196]	Time 0.934 (0.921)	Data 0.000 (0.006)	Loss 0.3011 (0.3007)	Prec@1 87.500 (87.709)	Prec@5 99.219 (99.602)
+2020-11-17 20:08:05 - INFO - EVALUATING - Epoch: [68][0/40]	Time 2.064 (2.064)	Data 0.490 (0.490)	Loss 2.0892 (2.0892)	Prec@1 32.812 (32.812)	Prec@5 72.656 (72.656)
+2020-11-17 20:08:38 - INFO - 
+ Epoch: 69	Training Loss 0.3140 	Training Prec@1 87.108 	Training Prec@5 99.604 	Validation Loss 2.0635 	Validation Prec@1 33.380 	Validation Prec@5 72.990 
+
+2020-11-17 20:08:38 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 20:08:38 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 20:08:38 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 20:08:38 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 20:08:40 - INFO - TRAINING - Epoch: [69][0/196]	Time 2.435 (2.435)	Data 1.054 (1.054)	Loss 0.2566 (0.2566)	Prec@1 89.844 (89.844)	Prec@5 100.000 (100.000)
+2020-11-17 20:10:11 - INFO - TRAINING - Epoch: [69][100/196]	Time 0.955 (0.928)	Data 0.000 (0.011)	Loss 0.2887 (0.3058)	Prec@1 88.281 (87.098)	Prec@5 100.000 (99.667)
+2020-11-17 20:11:39 - INFO - EVALUATING - Epoch: [69][0/40]	Time 2.301 (2.301)	Data 0.637 (0.637)	Loss 1.7434 (1.7434)	Prec@1 32.031 (32.031)	Prec@5 77.734 (77.734)
+2020-11-17 20:12:11 - INFO - 
+ Epoch: 70	Training Loss 0.3124 	Training Prec@1 86.894 	Training Prec@5 99.602 	Validation Loss 1.8045 	Validation Prec@1 33.320 	Validation Prec@5 76.040 
+
+2020-11-17 20:12:11 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 20:12:11 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 20:12:11 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 20:12:11 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 20:12:14 - INFO - TRAINING - Epoch: [70][0/196]	Time 2.134 (2.134)	Data 0.793 (0.793)	Loss 0.2988 (0.2988)	Prec@1 88.281 (88.281)	Prec@5 100.000 (100.000)
+2020-11-17 20:13:44 - INFO - TRAINING - Epoch: [70][100/196]	Time 0.871 (0.918)	Data 0.000 (0.008)	Loss 0.3030 (0.3007)	Prec@1 88.672 (87.411)	Prec@5 100.000 (99.664)
+2020-11-17 20:15:11 - INFO - EVALUATING - Epoch: [70][0/40]	Time 2.267 (2.267)	Data 0.654 (0.654)	Loss 1.8561 (1.8561)	Prec@1 29.297 (29.297)	Prec@5 67.969 (67.969)
+2020-11-17 20:15:44 - INFO - 
+ Epoch: 71	Training Loss 0.3432 	Training Prec@1 85.470 	Training Prec@5 99.486 	Validation Loss 1.8774 	Validation Prec@1 28.910 	Validation Prec@5 67.350 
+
+2020-11-17 20:15:44 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 20:15:44 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 20:15:44 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 20:15:44 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 20:15:46 - INFO - TRAINING - Epoch: [71][0/196]	Time 2.245 (2.245)	Data 0.851 (0.851)	Loss 0.4191 (0.4191)	Prec@1 79.297 (79.297)	Prec@5 100.000 (100.000)
+2020-11-17 20:17:17 - INFO - TRAINING - Epoch: [71][100/196]	Time 0.875 (0.926)	Data 0.000 (0.009)	Loss 0.2822 (0.3251)	Prec@1 88.281 (86.320)	Prec@5 99.609 (99.594)
+2020-11-17 20:18:44 - INFO - EVALUATING - Epoch: [71][0/40]	Time 1.702 (1.702)	Data 0.454 (0.454)	Loss 2.1367 (2.1367)	Prec@1 24.219 (24.219)	Prec@5 64.453 (64.453)
+2020-11-17 20:19:16 - INFO - 
+ Epoch: 72	Training Loss 0.3281 	Training Prec@1 86.140 	Training Prec@5 99.554 	Validation Loss 2.1291 	Validation Prec@1 27.920 	Validation Prec@5 66.380 
+
+2020-11-17 20:19:16 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 20:19:16 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 20:19:16 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 20:19:16 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 20:19:18 - INFO - TRAINING - Epoch: [72][0/196]	Time 2.226 (2.226)	Data 0.941 (0.941)	Loss 0.2348 (0.2348)	Prec@1 89.062 (89.062)	Prec@5 100.000 (100.000)
+2020-11-17 20:20:50 - INFO - TRAINING - Epoch: [72][100/196]	Time 0.921 (0.926)	Data 0.000 (0.009)	Loss 0.3787 (0.2978)	Prec@1 83.203 (87.601)	Prec@5 99.219 (99.667)
+2020-11-17 20:22:17 - INFO - EVALUATING - Epoch: [72][0/40]	Time 2.286 (2.286)	Data 0.755 (0.755)	Loss 1.9891 (1.9891)	Prec@1 25.781 (25.781)	Prec@5 73.047 (73.047)
+2020-11-17 20:22:49 - INFO - 
+ Epoch: 73	Training Loss 0.3051 	Training Prec@1 87.426 	Training Prec@5 99.656 	Validation Loss 1.9624 	Validation Prec@1 26.860 	Validation Prec@5 72.540 
+
+2020-11-17 20:22:49 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 20:22:49 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 20:22:49 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 20:22:49 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 20:22:51 - INFO - TRAINING - Epoch: [73][0/196]	Time 2.254 (2.254)	Data 0.653 (0.653)	Loss 0.3243 (0.3243)	Prec@1 87.109 (87.109)	Prec@5 100.000 (100.000)
+2020-11-17 20:24:23 - INFO - TRAINING - Epoch: [73][100/196]	Time 0.905 (0.929)	Data 0.000 (0.007)	Loss 0.2718 (0.3002)	Prec@1 89.062 (87.384)	Prec@5 100.000 (99.644)
+2020-11-17 20:25:50 - INFO - EVALUATING - Epoch: [73][0/40]	Time 2.194 (2.194)	Data 1.018 (1.018)	Loss 2.2735 (2.2735)	Prec@1 28.516 (28.516)	Prec@5 75.000 (75.000)
+2020-11-17 20:26:22 - INFO - 
+ Epoch: 74	Training Loss 0.3068 	Training Prec@1 87.194 	Training Prec@5 99.606 	Validation Loss 2.2262 	Validation Prec@1 29.640 	Validation Prec@5 74.600 
+
+2020-11-17 20:26:22 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 20:26:22 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 20:26:22 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 20:26:22 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 20:26:25 - INFO - TRAINING - Epoch: [74][0/196]	Time 2.138 (2.138)	Data 0.837 (0.837)	Loss 0.2920 (0.2920)	Prec@1 87.891 (87.891)	Prec@5 99.609 (99.609)
+2020-11-17 20:27:55 - INFO - TRAINING - Epoch: [74][100/196]	Time 0.873 (0.920)	Data 0.000 (0.008)	Loss 0.2458 (0.2859)	Prec@1 89.844 (88.297)	Prec@5 99.609 (99.594)
+2020-11-17 20:29:23 - INFO - EVALUATING - Epoch: [74][0/40]	Time 2.428 (2.428)	Data 0.790 (0.790)	Loss 1.7252 (1.7252)	Prec@1 29.688 (29.688)	Prec@5 74.609 (74.609)
+2020-11-17 20:29:55 - INFO - 
+ Epoch: 75	Training Loss 0.3042 	Training Prec@1 87.360 	Training Prec@5 99.578 	Validation Loss 1.7619 	Validation Prec@1 32.650 	Validation Prec@5 73.930 
+
+2020-11-17 20:29:55 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 20:29:55 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 20:29:55 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 20:29:55 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 20:29:58 - INFO - TRAINING - Epoch: [75][0/196]	Time 2.463 (2.463)	Data 0.820 (0.820)	Loss 0.2663 (0.2663)	Prec@1 88.672 (88.672)	Prec@5 99.609 (99.609)
+2020-11-17 20:31:29 - INFO - TRAINING - Epoch: [75][100/196]	Time 0.951 (0.930)	Data 0.000 (0.008)	Loss 0.3169 (0.2997)	Prec@1 86.328 (87.454)	Prec@5 100.000 (99.660)
+2020-11-17 20:32:56 - INFO - EVALUATING - Epoch: [75][0/40]	Time 2.012 (2.012)	Data 0.486 (0.486)	Loss 3.5980 (3.5980)	Prec@1 24.609 (24.609)	Prec@5 69.531 (69.531)
+2020-11-17 20:33:29 - INFO - 
+ Epoch: 76	Training Loss 0.3027 	Training Prec@1 87.276 	Training Prec@5 99.622 	Validation Loss 3.4312 	Validation Prec@1 25.290 	Validation Prec@5 71.060 
+
+2020-11-17 20:33:29 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 20:33:29 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 20:33:29 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 20:33:29 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 20:33:31 - INFO - TRAINING - Epoch: [76][0/196]	Time 2.195 (2.195)	Data 0.892 (0.892)	Loss 0.3605 (0.3605)	Prec@1 85.938 (85.938)	Prec@5 100.000 (100.000)
+2020-11-17 20:35:02 - INFO - TRAINING - Epoch: [76][100/196]	Time 0.965 (0.925)	Data 0.000 (0.009)	Loss 0.3268 (0.2976)	Prec@1 86.328 (87.461)	Prec@5 99.219 (99.636)
+2020-11-17 20:36:29 - INFO - EVALUATING - Epoch: [76][0/40]	Time 2.210 (2.210)	Data 0.868 (0.868)	Loss 2.3234 (2.3234)	Prec@1 21.094 (21.094)	Prec@5 65.625 (65.625)
+2020-11-17 20:37:02 - INFO - 
+ Epoch: 77	Training Loss 0.3041 	Training Prec@1 87.386 	Training Prec@5 99.632 	Validation Loss 2.3012 	Validation Prec@1 24.510 	Validation Prec@5 66.010 
+
+2020-11-17 20:37:02 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 20:37:02 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 20:37:02 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 20:37:02 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 20:37:04 - INFO - TRAINING - Epoch: [77][0/196]	Time 2.343 (2.343)	Data 0.906 (0.906)	Loss 0.1967 (0.1967)	Prec@1 92.188 (92.188)	Prec@5 100.000 (100.000)
+2020-11-17 20:38:35 - INFO - TRAINING - Epoch: [77][100/196]	Time 0.884 (0.927)	Data 0.000 (0.009)	Loss 0.3174 (0.2892)	Prec@1 85.938 (87.709)	Prec@5 99.609 (99.706)
+2020-11-17 20:40:03 - INFO - EVALUATING - Epoch: [77][0/40]	Time 2.396 (2.396)	Data 1.034 (1.034)	Loss 2.0464 (2.0464)	Prec@1 26.562 (26.562)	Prec@5 71.094 (71.094)
+2020-11-17 20:40:35 - INFO - 
+ Epoch: 78	Training Loss 0.2991 	Training Prec@1 87.518 	Training Prec@5 99.674 	Validation Loss 2.0944 	Validation Prec@1 27.090 	Validation Prec@5 71.570 
+
+2020-11-17 20:40:35 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 20:40:35 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 20:40:35 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 20:40:35 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 20:40:38 - INFO - TRAINING - Epoch: [78][0/196]	Time 2.479 (2.479)	Data 1.104 (1.104)	Loss 0.2998 (0.2998)	Prec@1 87.500 (87.500)	Prec@5 98.438 (98.438)
+2020-11-17 20:42:09 - INFO - TRAINING - Epoch: [78][100/196]	Time 0.972 (0.927)	Data 0.000 (0.011)	Loss 0.3028 (0.2874)	Prec@1 87.891 (87.976)	Prec@5 100.000 (99.694)
+2020-11-17 20:43:36 - INFO - EVALUATING - Epoch: [78][0/40]	Time 1.942 (1.942)	Data 0.585 (0.585)	Loss 1.9236 (1.9236)	Prec@1 28.125 (28.125)	Prec@5 74.219 (74.219)
+2020-11-17 20:44:09 - INFO - 
+ Epoch: 79	Training Loss 0.3021 	Training Prec@1 87.442 	Training Prec@5 99.634 	Validation Loss 1.9715 	Validation Prec@1 30.590 	Validation Prec@5 72.130 
+
+2020-11-17 20:44:09 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 20:44:09 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 20:44:09 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 20:44:09 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 20:44:11 - INFO - TRAINING - Epoch: [79][0/196]	Time 2.032 (2.032)	Data 0.691 (0.691)	Loss 0.3232 (0.3232)	Prec@1 84.375 (84.375)	Prec@5 99.609 (99.609)
+2020-11-17 20:45:42 - INFO - TRAINING - Epoch: [79][100/196]	Time 0.967 (0.925)	Data 0.000 (0.007)	Loss 0.2657 (0.2905)	Prec@1 89.062 (88.022)	Prec@5 99.609 (99.656)
+2020-11-17 20:47:10 - INFO - EVALUATING - Epoch: [79][0/40]	Time 2.246 (2.246)	Data 0.670 (0.670)	Loss 2.0133 (2.0133)	Prec@1 25.391 (25.391)	Prec@5 69.141 (69.141)
+2020-11-17 20:47:42 - INFO - 
+ Epoch: 80	Training Loss 0.2952 	Training Prec@1 87.796 	Training Prec@5 99.634 	Validation Loss 2.0673 	Validation Prec@1 24.900 	Validation Prec@5 68.630 
+
+2020-11-17 20:47:42 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 20:47:42 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 20:47:42 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 20:47:42 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 20:47:44 - INFO - TRAINING - Epoch: [80][0/196]	Time 2.160 (2.160)	Data 0.786 (0.786)	Loss 0.2113 (0.2113)	Prec@1 89.844 (89.844)	Prec@5 100.000 (100.000)
+2020-11-17 20:49:15 - INFO - TRAINING - Epoch: [80][100/196]	Time 0.877 (0.922)	Data 0.000 (0.008)	Loss 0.2528 (0.2886)	Prec@1 90.234 (88.022)	Prec@5 100.000 (99.683)
+2020-11-17 20:50:43 - INFO - EVALUATING - Epoch: [80][0/40]	Time 2.377 (2.377)	Data 0.633 (0.633)	Loss 1.8306 (1.8306)	Prec@1 30.859 (30.859)	Prec@5 76.172 (76.172)
+2020-11-17 20:51:15 - INFO - 
+ Epoch: 81	Training Loss 0.2992 	Training Prec@1 87.570 	Training Prec@5 99.658 	Validation Loss 1.9631 	Validation Prec@1 31.150 	Validation Prec@5 72.870 
+
+2020-11-17 20:51:15 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 20:51:15 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 20:51:15 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 20:51:15 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 20:51:15 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 20:51:17 - INFO - TRAINING - Epoch: [81][0/196]	Time 2.017 (2.017)	Data 0.727 (0.727)	Loss 0.2846 (0.2846)	Prec@1 87.891 (87.891)	Prec@5 100.000 (100.000)
+2020-11-17 20:52:47 - INFO - TRAINING - Epoch: [81][100/196]	Time 0.874 (0.917)	Data 0.000 (0.007)	Loss 0.2098 (0.2355)	Prec@1 91.016 (90.350)	Prec@5 98.438 (99.776)
+2020-11-17 20:54:14 - INFO - EVALUATING - Epoch: [81][0/40]	Time 1.785 (1.785)	Data 0.500 (0.500)	Loss 1.7969 (1.7969)	Prec@1 31.641 (31.641)	Prec@5 72.656 (72.656)
+2020-11-17 20:54:46 - INFO - 
+ Epoch: 82	Training Loss 0.2262 	Training Prec@1 90.798 	Training Prec@5 99.798 	Validation Loss 1.8812 	Validation Prec@1 32.870 	Validation Prec@5 70.840 
+
+2020-11-17 20:54:46 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 20:54:46 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 20:54:46 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 20:54:46 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 20:54:46 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 20:54:49 - INFO - TRAINING - Epoch: [82][0/196]	Time 2.384 (2.384)	Data 0.777 (0.777)	Loss 0.2262 (0.2262)	Prec@1 91.016 (91.016)	Prec@5 99.609 (99.609)
+2020-11-17 20:56:20 - INFO - TRAINING - Epoch: [82][100/196]	Time 0.926 (0.924)	Data 0.000 (0.008)	Loss 0.1970 (0.2009)	Prec@1 93.750 (91.897)	Prec@5 100.000 (99.884)
+2020-11-17 20:57:46 - INFO - EVALUATING - Epoch: [82][0/40]	Time 1.823 (1.823)	Data 0.504 (0.504)	Loss 1.8028 (1.8028)	Prec@1 33.594 (33.594)	Prec@5 71.484 (71.484)
+2020-11-17 20:58:18 - INFO - 
+ Epoch: 83	Training Loss 0.1977 	Training Prec@1 92.064 	Training Prec@5 99.876 	Validation Loss 1.8485 	Validation Prec@1 33.680 	Validation Prec@5 72.330 
+
+2020-11-17 20:58:18 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 20:58:18 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 20:58:18 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 20:58:18 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 20:58:18 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 20:58:21 - INFO - TRAINING - Epoch: [83][0/196]	Time 2.226 (2.226)	Data 0.877 (0.877)	Loss 0.1972 (0.1972)	Prec@1 92.969 (92.969)	Prec@5 99.609 (99.609)
+2020-11-17 20:59:52 - INFO - TRAINING - Epoch: [83][100/196]	Time 0.985 (0.925)	Data 0.000 (0.009)	Loss 0.1853 (0.1888)	Prec@1 93.750 (92.532)	Prec@5 100.000 (99.853)
+2020-11-17 21:01:19 - INFO - EVALUATING - Epoch: [83][0/40]	Time 2.302 (2.302)	Data 0.588 (0.588)	Loss 1.8959 (1.8959)	Prec@1 32.031 (32.031)	Prec@5 72.266 (72.266)
+2020-11-17 21:01:52 - INFO - 
+ Epoch: 84	Training Loss 0.1890 	Training Prec@1 92.548 	Training Prec@5 99.868 	Validation Loss 1.9572 	Validation Prec@1 32.490 	Validation Prec@5 71.150 
+
+2020-11-17 21:01:52 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 21:01:52 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 21:01:52 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 21:01:52 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 21:01:52 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 21:01:54 - INFO - TRAINING - Epoch: [84][0/196]	Time 2.203 (2.203)	Data 0.729 (0.729)	Loss 0.1709 (0.1709)	Prec@1 93.359 (93.359)	Prec@5 99.609 (99.609)
+2020-11-17 21:03:25 - INFO - TRAINING - Epoch: [84][100/196]	Time 0.914 (0.927)	Data 0.000 (0.007)	Loss 0.1873 (0.1810)	Prec@1 91.016 (92.760)	Prec@5 99.609 (99.865)
+2020-11-17 21:04:53 - INFO - EVALUATING - Epoch: [84][0/40]	Time 2.307 (2.307)	Data 0.989 (0.989)	Loss 1.8352 (1.8352)	Prec@1 30.859 (30.859)	Prec@5 73.047 (73.047)
+2020-11-17 21:05:25 - INFO - 
+ Epoch: 85	Training Loss 0.1832 	Training Prec@1 92.598 	Training Prec@5 99.856 	Validation Loss 1.8959 	Validation Prec@1 33.230 	Validation Prec@5 71.180 
+
+2020-11-17 21:05:25 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 21:05:25 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 21:05:25 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 21:05:25 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 21:05:25 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 21:05:27 - INFO - TRAINING - Epoch: [85][0/196]	Time 2.048 (2.048)	Data 0.753 (0.753)	Loss 0.1491 (0.1491)	Prec@1 92.578 (92.578)	Prec@5 99.609 (99.609)
+2020-11-17 21:06:58 - INFO - TRAINING - Epoch: [85][100/196]	Time 0.925 (0.925)	Data 0.000 (0.008)	Loss 0.1559 (0.1761)	Prec@1 94.141 (93.112)	Prec@5 100.000 (99.884)
+2020-11-17 21:08:26 - INFO - EVALUATING - Epoch: [85][0/40]	Time 1.811 (1.811)	Data 0.604 (0.604)	Loss 1.8383 (1.8383)	Prec@1 32.422 (32.422)	Prec@5 74.609 (74.609)
+2020-11-17 21:08:58 - INFO - 
+ Epoch: 86	Training Loss 0.1778 	Training Prec@1 92.958 	Training Prec@5 99.870 	Validation Loss 1.8903 	Validation Prec@1 33.770 	Validation Prec@5 72.540 
+
+2020-11-17 21:08:58 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 21:08:58 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 21:08:58 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 21:08:58 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 21:08:58 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 21:09:00 - INFO - TRAINING - Epoch: [86][0/196]	Time 2.615 (2.615)	Data 0.950 (0.950)	Loss 0.2015 (0.2015)	Prec@1 91.016 (91.016)	Prec@5 99.609 (99.609)
+2020-11-17 21:10:31 - INFO - TRAINING - Epoch: [86][100/196]	Time 0.946 (0.921)	Data 0.000 (0.010)	Loss 0.1731 (0.1753)	Prec@1 92.578 (92.799)	Prec@5 100.000 (99.880)
+2020-11-17 21:11:58 - INFO - EVALUATING - Epoch: [86][0/40]	Time 1.991 (1.991)	Data 0.710 (0.710)	Loss 1.7825 (1.7825)	Prec@1 31.641 (31.641)	Prec@5 76.562 (76.562)
+2020-11-17 21:12:30 - INFO - 
+ Epoch: 87	Training Loss 0.1732 	Training Prec@1 92.906 	Training Prec@5 99.890 	Validation Loss 1.8356 	Validation Prec@1 34.330 	Validation Prec@5 72.850 
+
+2020-11-17 21:12:30 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 21:12:30 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 21:12:30 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 21:12:30 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 21:12:30 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 21:12:33 - INFO - TRAINING - Epoch: [87][0/196]	Time 2.579 (2.579)	Data 1.021 (1.021)	Loss 0.1579 (0.1579)	Prec@1 92.969 (92.969)	Prec@5 100.000 (100.000)
+2020-11-17 21:14:04 - INFO - TRAINING - Epoch: [87][100/196]	Time 0.879 (0.924)	Data 0.000 (0.010)	Loss 0.1466 (0.1748)	Prec@1 93.750 (92.849)	Prec@5 100.000 (99.876)
+2020-11-17 21:15:31 - INFO - EVALUATING - Epoch: [87][0/40]	Time 1.882 (1.882)	Data 0.529 (0.529)	Loss 1.9766 (1.9766)	Prec@1 30.078 (30.078)	Prec@5 72.266 (72.266)
+2020-11-17 21:16:03 - INFO - 
+ Epoch: 88	Training Loss 0.1722 	Training Prec@1 92.968 	Training Prec@5 99.912 	Validation Loss 2.0277 	Validation Prec@1 31.560 	Validation Prec@5 71.240 
+
+2020-11-17 21:16:03 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 21:16:03 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 21:16:03 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 21:16:03 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 21:16:03 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 21:16:05 - INFO - TRAINING - Epoch: [88][0/196]	Time 2.191 (2.191)	Data 0.702 (0.702)	Loss 0.1664 (0.1664)	Prec@1 91.406 (91.406)	Prec@5 100.000 (100.000)
+2020-11-17 21:17:37 - INFO - TRAINING - Epoch: [88][100/196]	Time 0.882 (0.925)	Data 0.000 (0.007)	Loss 0.1474 (0.1677)	Prec@1 95.312 (92.988)	Prec@5 99.609 (99.903)
+2020-11-17 21:19:03 - INFO - EVALUATING - Epoch: [88][0/40]	Time 1.982 (1.982)	Data 0.794 (0.794)	Loss 1.8000 (1.8000)	Prec@1 33.594 (33.594)	Prec@5 75.000 (75.000)
+2020-11-17 21:19:36 - INFO - 
+ Epoch: 89	Training Loss 0.1690 	Training Prec@1 93.050 	Training Prec@5 99.898 	Validation Loss 1.8495 	Validation Prec@1 33.500 	Validation Prec@5 73.170 
+
+2020-11-17 21:19:36 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 21:19:36 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 21:19:36 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 21:19:36 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 21:19:36 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 21:19:38 - INFO - TRAINING - Epoch: [89][0/196]	Time 2.268 (2.268)	Data 0.783 (0.783)	Loss 0.1637 (0.1637)	Prec@1 93.359 (93.359)	Prec@5 99.609 (99.609)
+2020-11-17 21:21:10 - INFO - TRAINING - Epoch: [89][100/196]	Time 0.906 (0.935)	Data 0.000 (0.008)	Loss 0.2185 (0.1646)	Prec@1 93.359 (93.452)	Prec@5 99.609 (99.888)
+2020-11-17 21:22:37 - INFO - EVALUATING - Epoch: [89][0/40]	Time 2.068 (2.068)	Data 0.754 (0.754)	Loss 1.9605 (1.9605)	Prec@1 30.859 (30.859)	Prec@5 72.656 (72.656)
+2020-11-17 21:23:10 - INFO - 
+ Epoch: 90	Training Loss 0.1678 	Training Prec@1 93.224 	Training Prec@5 99.900 	Validation Loss 2.0008 	Validation Prec@1 31.890 	Validation Prec@5 71.010 
+
+2020-11-17 21:23:10 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 21:23:10 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 21:23:10 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 21:23:10 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 21:23:10 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 21:23:13 - INFO - TRAINING - Epoch: [90][0/196]	Time 2.733 (2.733)	Data 0.933 (0.933)	Loss 0.0823 (0.0823)	Prec@1 98.047 (98.047)	Prec@5 100.000 (100.000)
+2020-11-17 21:24:44 - INFO - TRAINING - Epoch: [90][100/196]	Time 0.903 (0.929)	Data 0.000 (0.009)	Loss 0.1288 (0.1626)	Prec@1 94.922 (93.475)	Prec@5 100.000 (99.899)
+2020-11-17 21:26:11 - INFO - EVALUATING - Epoch: [90][0/40]	Time 2.110 (2.110)	Data 0.697 (0.697)	Loss 1.9205 (1.9205)	Prec@1 33.594 (33.594)	Prec@5 73.828 (73.828)
+2020-11-17 21:26:43 - INFO - 
+ Epoch: 91	Training Loss 0.1632 	Training Prec@1 93.390 	Training Prec@5 99.894 	Validation Loss 1.9664 	Validation Prec@1 33.500 	Validation Prec@5 71.850 
+
+2020-11-17 21:26:43 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 21:26:43 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 21:26:43 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 21:26:43 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 21:26:43 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 21:26:45 - INFO - TRAINING - Epoch: [91][0/196]	Time 2.149 (2.149)	Data 0.751 (0.751)	Loss 0.2005 (0.2005)	Prec@1 91.016 (91.016)	Prec@5 99.219 (99.219)
+2020-11-17 21:28:16 - INFO - TRAINING - Epoch: [91][100/196]	Time 0.896 (0.925)	Data 0.000 (0.008)	Loss 0.1212 (0.1590)	Prec@1 94.922 (93.359)	Prec@5 100.000 (99.907)
+2020-11-17 21:29:43 - INFO - EVALUATING - Epoch: [91][0/40]	Time 1.809 (1.809)	Data 0.543 (0.543)	Loss 1.8618 (1.8618)	Prec@1 34.375 (34.375)	Prec@5 76.172 (76.172)
+2020-11-17 21:30:15 - INFO - 
+ Epoch: 92	Training Loss 0.1611 	Training Prec@1 93.336 	Training Prec@5 99.896 	Validation Loss 1.9029 	Validation Prec@1 34.630 	Validation Prec@5 73.550 
+
+2020-11-17 21:30:15 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 21:30:15 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 21:30:15 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 21:30:15 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 21:30:15 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 21:30:18 - INFO - TRAINING - Epoch: [92][0/196]	Time 2.321 (2.321)	Data 0.672 (0.672)	Loss 0.1689 (0.1689)	Prec@1 92.969 (92.969)	Prec@5 100.000 (100.000)
+2020-11-17 21:31:48 - INFO - TRAINING - Epoch: [92][100/196]	Time 0.945 (0.920)	Data 0.000 (0.007)	Loss 0.1608 (0.1625)	Prec@1 93.359 (93.243)	Prec@5 100.000 (99.880)
+2020-11-17 21:33:15 - INFO - EVALUATING - Epoch: [92][0/40]	Time 1.816 (1.816)	Data 0.540 (0.540)	Loss 1.8856 (1.8856)	Prec@1 31.250 (31.250)	Prec@5 75.781 (75.781)
+2020-11-17 21:33:47 - INFO - 
+ Epoch: 93	Training Loss 0.1601 	Training Prec@1 93.418 	Training Prec@5 99.892 	Validation Loss 1.9171 	Validation Prec@1 34.360 	Validation Prec@5 73.070 
+
+2020-11-17 21:33:47 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 21:33:47 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 21:33:47 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 21:33:47 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 21:33:47 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 21:33:50 - INFO - TRAINING - Epoch: [93][0/196]	Time 2.402 (2.402)	Data 0.889 (0.889)	Loss 0.2209 (0.2209)	Prec@1 91.016 (91.016)	Prec@5 99.609 (99.609)
+2020-11-17 21:35:21 - INFO - TRAINING - Epoch: [93][100/196]	Time 0.875 (0.923)	Data 0.000 (0.009)	Loss 0.1783 (0.1610)	Prec@1 93.750 (93.390)	Prec@5 100.000 (99.888)
+2020-11-17 21:36:47 - INFO - EVALUATING - Epoch: [93][0/40]	Time 1.920 (1.920)	Data 0.649 (0.649)	Loss 1.9809 (1.9809)	Prec@1 28.125 (28.125)	Prec@5 72.266 (72.266)
+2020-11-17 21:37:19 - INFO - 
+ Epoch: 94	Training Loss 0.1586 	Training Prec@1 93.464 	Training Prec@5 99.892 	Validation Loss 2.0197 	Validation Prec@1 32.390 	Validation Prec@5 71.460 
+
+2020-11-17 21:37:19 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 21:37:19 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 21:37:19 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 21:37:19 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 21:37:19 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 21:37:22 - INFO - TRAINING - Epoch: [94][0/196]	Time 2.288 (2.288)	Data 0.720 (0.720)	Loss 0.1691 (0.1691)	Prec@1 93.750 (93.750)	Prec@5 99.609 (99.609)
+2020-11-17 21:38:53 - INFO - TRAINING - Epoch: [94][100/196]	Time 0.923 (0.928)	Data 0.000 (0.007)	Loss 0.1571 (0.1521)	Prec@1 94.922 (93.661)	Prec@5 99.219 (99.899)
+2020-11-17 21:40:20 - INFO - EVALUATING - Epoch: [94][0/40]	Time 2.223 (2.223)	Data 0.924 (0.924)	Loss 1.9328 (1.9328)	Prec@1 31.641 (31.641)	Prec@5 75.000 (75.000)
+2020-11-17 21:40:52 - INFO - 
+ Epoch: 95	Training Loss 0.1582 	Training Prec@1 93.462 	Training Prec@5 99.898 	Validation Loss 1.9839 	Validation Prec@1 33.720 	Validation Prec@5 71.950 
+
+2020-11-17 21:40:52 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 21:40:52 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 21:40:52 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 21:40:52 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 21:40:52 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 21:40:55 - INFO - TRAINING - Epoch: [95][0/196]	Time 2.289 (2.289)	Data 0.875 (0.875)	Loss 0.1537 (0.1537)	Prec@1 93.750 (93.750)	Prec@5 100.000 (100.000)
+2020-11-17 21:42:25 - INFO - TRAINING - Epoch: [95][100/196]	Time 0.892 (0.922)	Data 0.000 (0.009)	Loss 0.1317 (0.1536)	Prec@1 93.750 (93.704)	Prec@5 100.000 (99.915)
+2020-11-17 21:43:53 - INFO - EVALUATING - Epoch: [95][0/40]	Time 1.795 (1.795)	Data 0.557 (0.557)	Loss 1.9496 (1.9496)	Prec@1 31.250 (31.250)	Prec@5 75.781 (75.781)
+2020-11-17 21:44:25 - INFO - 
+ Epoch: 96	Training Loss 0.1543 	Training Prec@1 93.648 	Training Prec@5 99.910 	Validation Loss 1.9914 	Validation Prec@1 33.700 	Validation Prec@5 72.960 
+
+2020-11-17 21:44:25 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 21:44:25 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 21:44:25 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 21:44:25 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 21:44:25 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 21:44:27 - INFO - TRAINING - Epoch: [96][0/196]	Time 2.170 (2.170)	Data 0.814 (0.814)	Loss 0.1845 (0.1845)	Prec@1 91.797 (91.797)	Prec@5 99.609 (99.609)
+2020-11-17 21:45:58 - INFO - TRAINING - Epoch: [96][100/196]	Time 0.896 (0.921)	Data 0.000 (0.008)	Loss 0.1983 (0.1568)	Prec@1 92.188 (93.669)	Prec@5 99.609 (99.919)
+2020-11-17 21:47:25 - INFO - EVALUATING - Epoch: [96][0/40]	Time 1.981 (1.981)	Data 0.488 (0.488)	Loss 1.9374 (1.9374)	Prec@1 30.859 (30.859)	Prec@5 74.219 (74.219)
+2020-11-17 21:47:57 - INFO - 
+ Epoch: 97	Training Loss 0.1563 	Training Prec@1 93.650 	Training Prec@5 99.922 	Validation Loss 1.9579 	Validation Prec@1 33.350 	Validation Prec@5 72.710 
+
+2020-11-17 21:47:57 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 21:47:57 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 21:47:57 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 21:47:57 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 21:47:57 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 21:47:59 - INFO - TRAINING - Epoch: [97][0/196]	Time 2.398 (2.398)	Data 0.778 (0.778)	Loss 0.1396 (0.1396)	Prec@1 93.359 (93.359)	Prec@5 100.000 (100.000)
+2020-11-17 21:49:30 - INFO - TRAINING - Epoch: [97][100/196]	Time 0.892 (0.924)	Data 0.000 (0.008)	Loss 0.2119 (0.1540)	Prec@1 89.844 (93.491)	Prec@5 100.000 (99.934)
+2020-11-17 21:50:57 - INFO - EVALUATING - Epoch: [97][0/40]	Time 1.989 (1.989)	Data 0.636 (0.636)	Loss 2.0247 (2.0247)	Prec@1 30.859 (30.859)	Prec@5 73.828 (73.828)
+2020-11-17 21:51:29 - INFO - 
+ Epoch: 98	Training Loss 0.1534 	Training Prec@1 93.438 	Training Prec@5 99.932 	Validation Loss 2.0364 	Validation Prec@1 33.660 	Validation Prec@5 72.460 
+
+2020-11-17 21:51:30 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 21:51:30 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 21:51:30 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 21:51:30 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 21:51:30 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 21:51:32 - INFO - TRAINING - Epoch: [98][0/196]	Time 2.520 (2.520)	Data 0.827 (0.827)	Loss 0.1357 (0.1357)	Prec@1 93.750 (93.750)	Prec@5 100.000 (100.000)
+2020-11-17 21:53:03 - INFO - TRAINING - Epoch: [98][100/196]	Time 0.902 (0.927)	Data 0.000 (0.008)	Loss 0.1497 (0.1509)	Prec@1 92.969 (93.541)	Prec@5 100.000 (99.923)
+2020-11-17 21:54:30 - INFO - EVALUATING - Epoch: [98][0/40]	Time 1.851 (1.851)	Data 0.625 (0.625)	Loss 2.1452 (2.1452)	Prec@1 28.125 (28.125)	Prec@5 71.094 (71.094)
+2020-11-17 21:55:03 - INFO - 
+ Epoch: 99	Training Loss 0.1500 	Training Prec@1 93.680 	Training Prec@5 99.924 	Validation Loss 2.1528 	Validation Prec@1 30.460 	Validation Prec@5 70.290 
+
+2020-11-17 21:55:03 - DEBUG - OPTIMIZER - setting method = SGD
+2020-11-17 21:55:03 - DEBUG - OPTIMIZER - setting lr = 0.1
+2020-11-17 21:55:03 - DEBUG - OPTIMIZER - setting momentum = 0.9
+2020-11-17 21:55:03 - DEBUG - OPTIMIZER - setting weight_decay = 0.0001
+2020-11-17 21:55:03 - DEBUG - OPTIMIZER - setting lr = 0.01
+2020-11-17 21:55:05 - INFO - TRAINING - Epoch: [99][0/196]	Time 2.197 (2.197)	Data 0.718 (0.718)	Loss 0.1997 (0.1997)	Prec@1 91.797 (91.797)	Prec@5 99.609 (99.609)
+2020-11-17 21:56:36 - INFO - TRAINING - Epoch: [99][100/196]	Time 0.879 (0.925)	Data 0.000 (0.007)	Loss 0.1586 (0.1514)	Prec@1 94.531 (93.723)	Prec@5 100.000 (99.923)
+2020-11-17 21:58:04 - INFO - EVALUATING - Epoch: [99][0/40]	Time 1.997 (1.997)	Data 0.653 (0.653)	Loss 2.0020 (2.0020)	Prec@1 32.031 (32.031)	Prec@5 76.172 (76.172)
+2020-11-17 21:58:36 - INFO - 
+ Epoch: 100	Training Loss 0.1501 	Training Prec@1 93.778 	Training Prec@5 99.918 	Validation Loss 2.0201 	Validation Prec@1 35.060 	Validation Prec@5 73.170 
+
