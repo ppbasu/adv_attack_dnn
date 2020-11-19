@@ -2,6 +2,11 @@
 
 Current code only uses pgd adversarial attack. PGD iterations locked to 10. 
 
+```                                                                                                                 
+To create the conda environment                                                 
+>conda create -n new environment --file req.txt                                 
+```          
+
 ```
 To run clean image training and inference for cifar10 dataset use: 
 >python main.py --model <model_name> --save <save_folder_name> --dataset cifar10 --trpgd 0 --tspgd 0
