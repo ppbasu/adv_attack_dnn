@@ -27,12 +27,12 @@ The options for <model_name> are resnet (for both ResNet-18 and ResNet-50) or vg
 
 ```
 To run adversarial image training and inference for cifar10 dataset use: 
->python main.py --model <model_name> --save <save_folder_name> --dataset cifar10 --trpgd 1 --tspgd 1 --a '<attack-type>'
+>python main.py --model <model_name> --save <save_folder_name> --dataset cifar10 --trpgd 1 --tspgd 1 --aa '<attack-type>'
 ```
 ```
 --trpgd = training pgd image flag
 --tspgd = test pgd image flag
---a = pgd,fgsm,ifgsm
+--aa = pgd,fgsm,ifgsm
 --save = creates a folder with provided name to store training/evaluation results
 --model = DNN model: alexnet, resnet, vgg_cifar10
 ```
