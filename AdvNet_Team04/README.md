@@ -15,12 +15,15 @@ Line 320 is another part of the main.py file that will typically need to be chan
 Once the necessary changes are made in the main.py file, save the changes and exit out of the file back to the command line. 
 
 If you will be running either the ResNet-18 or the ResNet-50 network then the resnet.py file in the models folder may need to be changed.
+
+In the resnet.py file, change line 215 to say "depth = depth or 18" to run ResNet-18 and change it to say "depth = depth or 50" to run ResNet-50.
+
+Once the necessary changes are made in the resnet.py file, save the changes and exit out of the file back to the command line.
 ```
 To run clean image training and inference for cifar10 dataset use: 
 >python main.py --model <model_name> --save <save_folder_name> --dataset cifar10 --trpgd 0 --tspgd 0
 ```
-The options for <model_name> are resnet,
-
+The options for <model_name> are resnet (for both ResNet-18 and ResNet-50) or vgg_cifar10.
 
 ```
 To run adversarial image training and inference for cifar10 dataset use: 
